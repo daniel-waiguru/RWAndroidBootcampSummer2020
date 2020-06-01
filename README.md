@@ -5,7 +5,7 @@
 
 **Name:** Daniel Waiguru
 
-**Discord Username:** Daniel Waiguru
+**Discord Username:** TC:Daniel Waiguru
 
 **Basic Location:** Nairobi, Kenya
 
