@@ -1,5 +1,5 @@
 # RWAndroidBootcampSummer2020
-A repo for Ray Wenderlich Android bootcamp 2020 summer task assignments
+
 
 ![Daniel Waiguru image](/Image/daniel.jpg)
 
@@ -11,4 +11,7 @@ Basic Location: Nairobi, Kenya
 
 Programming Experince: Less than an year
 
+Goals: 
+I intend to continously keep improving my skills as an android developer, network with other developers and be a dependable problem solver.
 
+Hobbies: I enjoy playing Video Games, Hiking and travelling
