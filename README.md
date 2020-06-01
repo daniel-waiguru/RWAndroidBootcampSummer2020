@@ -3,9 +3,9 @@
 
 ![Daniel Waiguru image](/Image/daniel.jpg)
 
-Name: Daniel Waiguru
+** Name: ** Daniel Waiguru
 
-Discord Username: Daniel Waiguru
+*** Discord Username: ** Daniel Waiguru
 
 Basic Location: Nairobi, Kenya
 
