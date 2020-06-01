@@ -3,15 +3,16 @@
 
 ![Daniel Waiguru image](/Image/daniel.jpg)
 
-** Name: ** Daniel Waiguru
+**Name:** Daniel Waiguru
 
-*** Discord Username: ** Daniel Waiguru
+**Discord Username:** Daniel Waiguru
 
-Basic Location: Nairobi, Kenya
+**Basic Location:** Nairobi, Kenya
 
-Programming Experince: Less than an year
+**Programming Experince:** Less than an year
 
-Goals: 
-I intend to continously keep improving my skills as an android developer, network with other developers and be a dependable problem solver.
+**Goals:** 
+>I intend to continously keep improving my skills as an android developer, network with other developers and be a dependable problem solver.
 
-Hobbies: I enjoy playing Video Games, Hiking and travelling
+**Hobbies:** 
+>I enjoy playing Video Games, Hiking and travelling
