@@ -18,7 +18,14 @@ class Employee(
 ) : Person(firstName = firstName, lastName = lastName, email = email, phoneNumber = phoneNumber) {
 
     override fun toString(): String {
-        return "" // TODO format the data in any way you want! :]
+        return """
+            Name: $firstName $lastName
+            email: $email
+            Phone Number $phoneNumber
+            Salary: $salary
+            Social Security number: $socialSecurityNumber
+            Date hired: $hireDate
+        """.trimIndent() // TODO format the data in any way you want! :]
     }
 
     /**
@@ -27,15 +34,18 @@ class Employee(
      * Hint: to get time, you can create a `Date` object. Use SimpleDateFormatter to format the time!
      * */
     fun clockIn(): String {
-        val currentDate = Date()
-        val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-        return formatter.format(currentDate)
+        val clockInDate = dateFormatter()
+        return "$firstName $lastName clock in time is $clockInDate"
     }
 
     // TODO same as above, but times for clocking out!
-    fun clockOut(): String? {
+    fun clockOut(): String {
+        val clockOutDate = dateFormatter()
+        return "$firstName $lastName clock in time is $clockOutDate"
+    }
+    private fun dateFormatter(): String {
         val currentDate = Date()
-        val formatter = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+        val formatter = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
         return formatter.format(currentDate)
     }
 }
