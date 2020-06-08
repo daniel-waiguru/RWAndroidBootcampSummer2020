@@ -1,9 +1,11 @@
 package model.people
 
 import java.text.SimpleDateFormat
+import java.time.LocalDateTime
 import java.util.*
 
 class Employee(
+        id: String,
         firstName: String,
         lastName: String,
         email: String,
@@ -40,7 +42,7 @@ class Employee(
         return "$firstName $lastName clock in time is $clockOutDate"
     }
     private fun dateFormatter(): String {
-        val currentDate = Date()
+        val currentDate = LocalDateTime.now()
         val formatter = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
         return formatter.format(currentDate)
     }

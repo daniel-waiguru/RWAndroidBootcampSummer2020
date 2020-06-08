@@ -24,11 +24,23 @@ class Cafe {
         "Saturday" to mutableSetOf<Receipt>(),
         "Sunday" to mutableSetOf<Receipt>()
     )
-    val employee = Employee("Daniel", "Waiguru", "danielirungu91@gmail.com", "23333", 22456.00, "23D4RT", "12-06-2020")
-
     // maybe as employees check in, you can add them to the list of working employees!
-    private val employees = mutableSetOf<Employee>()
-    private val customers = mutableSetOf<Person>()
+    private val employees = mutableSetOf<Employee>(
+            Employee("1","Daniel", "Irungu", "danny@gmail.com", "254 70234765",
+                    500.0, "23D5Q", "6/06/2020"),
+            Employee("2","Dweng", "Johnson", "johnson@gmail.com", "254 710678921",
+                    200.0, "56Y8K", "8/04/2020"),
+            Employee("3","Cara", "Broom", "broomcara@gmail.com", "254 75678901",
+                    250.0, "0kD5Y", "6/02/2020"),
+            Employee("4","Rakesh", "Ren", "rakesh@gmail.com", "254 7654318",
+                    455.0, "23D5Q", "26/01/2020")
+    )
+    private val customers = mutableSetOf<Person>(
+            Person("5", "Eric", "Bockman", "254 76345431", "eric@yahoo.com"),
+            Person("6", "Miles", "Finer", "254 76900871", "miles.finer@yahoo.com"),
+            Person("7", "Pakistani", "Dennish", "254 70065421", "dennish@gmail.com"),
+            Person("8", "Jaya", "rakesh", "254 765689641", "jaya@yahoo.com")
+    )
 
     // make sure to add sponsorships and tie them to people!
     private val sponsorships = mutableSetOf<Sponsorship>()
