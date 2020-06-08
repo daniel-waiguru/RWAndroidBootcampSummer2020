@@ -1,20 +1,16 @@
 package model.people
 
 import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 import java.util.*
-import javax.swing.text.DateFormatter
 
 class Employee(
-    firstName: String,
-    lastName: String,
-    email: String,
-    phoneNumber: String,
-    val salary: Double,
-    val socialSecurityNumber: String,
-    val hireDate: String
+        firstName: String,
+        lastName: String,
+        email: String,
+        phoneNumber: String,
+        private val salary: Double,
+        private val socialSecurityNumber: String,
+        private val hireDate: String
 ) : Person(firstName = firstName, lastName = lastName, email = email, phoneNumber = phoneNumber) {
 
     override fun toString(): String {

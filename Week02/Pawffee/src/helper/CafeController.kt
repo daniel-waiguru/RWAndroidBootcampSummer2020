@@ -48,11 +48,25 @@ class CafeController {
      * */
     fun getNumberOfAdoptionsPerShelter(): Map<String, Int> {
         val allAdopters = cafe.getAdopters()
+        var retrievedAdopters = mutableMapOf<String, Int>()
+        if (retrievedAdopters.isNotEmpty()){
+            allAdopters.forEach { adopter->
+                val allCatsAdopted = adopter.cats.size
+                adopter.cats.forEach { cat->
+                    val listOfShelters = shelters.filter { it.shelterID == cat.id }
+                    retrievedAdopters = listOfShelters.map { it.name to allCatsAdopted }.toMap() as MutableMap<String, Int>
+                }
+            }
+        }
 
-        return emptyMap() // TODO find which cats belong to which shelter, and create a map of Shelter name to number of adoptions
+        return retrievedAdopters // TODO find which cats belong to which shelter, and create a map of Shelter name to number of adoptions
     }
 
     fun getUnadoptedCats(): Set<Cat> {
-
+        val unadoptedCats = mutableSetOf<Cat>()
+        for (cats in shelterToCat){
+            unadoptedCats.addAll(cats.value)
+        }
+        return unadoptedCats
     }
 }

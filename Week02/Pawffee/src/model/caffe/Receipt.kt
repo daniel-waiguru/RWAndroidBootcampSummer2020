@@ -5,13 +5,14 @@ import java.util.*
 // TODO add data, such as ID, list of products, and maybe an optional set of cats adopted/sponsored!
 class Receipt(
         val receiptID: String = UUID.randomUUID().toString(),
-        private val items: MutableList<Product>
+        val customerId: String,
+        private val products: MutableList<Product>
 ) {
     private var total: Double = 0.0
         get() = computeAmount()
     private fun computeAmount(): Double {
-        val prices = items.map { item ->
-            item.price
+        val prices = products.map { product ->
+            product.price
 
         }
         prices.forEach{ price ->
@@ -19,5 +20,8 @@ class Receipt(
         }
         return total
     }
-
+    //Populate products collection
+    fun insertProduct(product: Product){
+        products.add(product)
+    }
 }

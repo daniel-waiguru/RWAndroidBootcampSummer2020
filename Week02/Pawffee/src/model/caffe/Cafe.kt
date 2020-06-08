@@ -3,6 +3,7 @@ package model.caffe
 import model.animals.Cat
 import model.people.Employee
 import model.people.Person
+import java.time.LocalDate
 
 class Cafe {
 
@@ -23,6 +24,7 @@ class Cafe {
         "Saturday" to mutableSetOf<Receipt>(),
         "Sunday" to mutableSetOf<Receipt>()
     )
+    val employee = Employee("Daniel", "Waiguru", "danielirungu91@gmail.com", "23333", 22456.00, "23D4RT", "12-06-2020")
 
     // maybe as employees check in, you can add them to the list of working employees!
     private val employees = mutableSetOf<Employee>()
@@ -33,11 +35,13 @@ class Cafe {
 
     // TODO Add logic for checking in and checking out!
     fun checkInEmployee(employee: Employee) {
-
+        employee.clockIn()
+        employees.add(employee)
     }
 
     fun checkOutEmployee(employee: Employee) {
-
+        employee.clockOut()
+        employees.remove(employee.id)
     }
 
     fun showNumberOfReceiptsForDay(day: String) {
@@ -48,30 +52,52 @@ class Cafe {
 
     fun getReceipt(items: List<Product>, customerId: String): Receipt {
         // TODO return a receipt! Also make sure to check if customer is also an employee
-
-        return Receipt()
+        items.forEach { product->
+            if (isCustomerAnEmployee(product.id) && !product.productName.contains("Cat")){
+                product.price *= 0.85
+            }
+            else
+            {
+                product.price
+            }
+        }
+        val currentDay = LocalDate.now().dayOfWeek
+        val receiptDetails = Receipt(customerId = customerId, products = items.toMutableList())
+        receiptsByDay[currentDay]?.add(receiptDetails)
+        return receiptDetails
+    }
+    private fun isCustomerAnEmployee(id: String): Boolean {
+        employees.forEach { employeeId ->
+            employeeId.id == id
+        }
+        return true
     }
 
     fun addSponsorship(catId: String, personId: String) {
         // TODO add the sponsorship
+        sponsorships.add(Sponsorship(personId, catId))
     }
 
     fun getWorkingEmployees(): Set<Employee> = employees
 
     fun getAdoptedCats(): Set<Cat> {
-
+        return emptySet()
     }
 
-    fun getSponsoredCats(): Set<Cat> {
-
+    fun getSponsoredCats(): Set<String> {
+        val sponsoredCats = mutableSetOf<String>()
+        for (sponsoredCat in sponsorships){
+            sponsoredCats.add(sponsoredCat.catId)
+        }
+        return sponsoredCats
     }
 
     fun getMostPopularCats(): Set<Cat> {
-
+        return emptySet()
     }
 
     fun getTopSellingItems(): Set<Product> {
-
+        return emptySet()
     }
 
     fun getAdopters(): List<Person> {
