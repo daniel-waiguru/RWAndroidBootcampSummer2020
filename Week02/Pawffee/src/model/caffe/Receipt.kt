@@ -22,8 +22,5 @@ class Receipt(
         }
         return total
     }
-    //Populate products collection
-    fun insertProduct(product: Product){
-        products.add(product)
-    }
+
 }
