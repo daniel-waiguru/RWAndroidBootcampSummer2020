@@ -4,12 +4,9 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.view.animation.AnimationUtils
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -27,6 +24,10 @@ class MainActivity : AppCompatActivity() {
         "onDestroy() - does the final clean up of the fragment's state",
         "onDetach() - notify that the fragment has been disassociated from its hosting activity"
     )
+    companion object{
+        private const val TIP_KEY = "TIP KEY"
+    }
+    lateinit var currentTip: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -35,12 +36,14 @@ class MainActivity : AppCompatActivity() {
         textView2.startAnimation(animation)
         imageView.startAnimation(animation)
         btnNextTip.setOnClickListener {
-            var currentTip = androidTips.random()
+            currentTip = androidTips.random()
 
             txtTips.text = currentTip
             animateButton()
         }
-
+        if (savedInstanceState != null){
+            txtTips.text = savedInstanceState.getString(TIP_KEY)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -83,5 +86,10 @@ class MainActivity : AppCompatActivity() {
             duration = 1000
             rotationYBy(360f)
         }.start()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString(TIP_KEY, currentTip)
     }
 }

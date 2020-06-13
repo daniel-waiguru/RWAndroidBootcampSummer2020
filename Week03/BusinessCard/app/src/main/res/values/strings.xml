@@ -3,4 +3,10 @@
     <string name="aboutTitle">Danny tech</string>
     <string name="aboutMessage">Android development tips and tricks app</string>
     <string name="positiveMessage">Ok</string>
+    <string name="contact">
+        Name: Daniel Waiguru \n
+        Email: danielirungu91@gmail.com \n
+        Location: Nairobi Kenya \n
+        Telephone: 0773331946
+    </string>
 </resources>
