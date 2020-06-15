@@ -9,4 +9,9 @@
         Location: Nairobi Kenya \n
         Telephone: 0773331946
     </string>
+    <string name="danny_tech">Danny.tech</string>
+    <string name="android_dev_tips">Android Dev Tips</string>
+    <string name="next_tip">Next Tip</string>
+    <string name="android_dev">Android Dev Tips</string>
+    <string name="todo">TODO</string>
 </resources>
