@@ -126,15 +126,8 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         val movie = movieList[position]
         holder.posterImage.setImageResource(movie.poster)
-        //holder.posterTitle.text = movie.title
         holder.itemView.setOnClickListener {
-            val bundle = Bundle()
-            /*bundle.putString("title", movie.title)
-            bundle.putString("date", movie.release_date)
-            bundle.putString("summary", movie.summary)
-            bundle.putInt("poster", movie.poster)*/
-            //val detailsFragment = DetailsFragment()
-            //detailsFragment.arguments = bundle
+
             val action = MovieFragmentDirections.actionMovieFragmentToDetailsFragment(
                 movie.title,
                 movie.release_date,

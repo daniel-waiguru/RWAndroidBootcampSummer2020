@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_details.*
-import tech.danielwaiguru.moviesapp.data.Movie
 
 
 class DetailsFragment : Fragment() {
@@ -37,9 +36,5 @@ class DetailsFragment : Fragment() {
         }
     }
 
-    companion object {
 
-        @JvmStatic
-        fun newInstance() = DetailsFragment()
-    }
 }
