@@ -25,9 +25,9 @@ class MainActivity : AppCompatActivity() {
         "onDetach() - notify that the fragment has been disassociated from its hosting activity"
     )
     companion object{
-        private const val TIP_KEY = "TIP KEY"
+        private const val TIP_KEY = "TIP_KEY"
     }
-    lateinit var currentTip: String
+    private lateinit var currentTip: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -41,9 +41,16 @@ class MainActivity : AppCompatActivity() {
             txtTips.text = currentTip
             animateButton()
         }
-        if (savedInstanceState != null){
-            txtTips.text = savedInstanceState.getString(TIP_KEY)
+        currentTip = if (savedInstanceState != null){
+            savedInstanceState.getString(TIP_KEY)!!
+        } else {
+            androidTips.random()
         }
+        txtTips.text = currentTip
+    }
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString(TIP_KEY, currentTip)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -88,8 +95,5 @@ class MainActivity : AppCompatActivity() {
         }.start()
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        outState.putString(TIP_KEY, currentTip)
-    }
+
 }
