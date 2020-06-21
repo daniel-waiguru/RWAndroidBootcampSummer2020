@@ -20,5 +20,18 @@
         android:id="@+id/detailsFragment"
         android:name="tech.danielwaiguru.moviesapp.DetailsFragment"
         android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="desc"
+            app:argType="string" />
+        <argument
+            android:name="poster"
+            app:argType="integer" />
+    </fragment>
 </navigation>

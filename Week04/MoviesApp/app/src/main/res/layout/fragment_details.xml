@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
-        android:contentDescription="@string/trailer_image" />
+        android:contentDescription="@string/trailer_image_large" />
     <ImageView
         android:id="@+id/back_ic"
         android:layout_width="40dp"

@@ -1,10 +1,11 @@
 package tech.danielwaiguru.moviesapp
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import tech.danielwaiguru.moviesapp.data.Movie
 
@@ -107,6 +108,10 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
     inner class MovieViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val posterImage: ImageView = itemView.findViewById(R.id.posterImageView)
         //val posterTitle: TextView = itemView.findViewById(R.id.posterTitle)
+        fun bind(movie: Movie){
+            posterImage.setImageResource(movie.poster)
+
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
@@ -122,5 +127,23 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
         val movie = movieList[position]
         holder.posterImage.setImageResource(movie.poster)
         //holder.posterTitle.text = movie.title
+        holder.itemView.setOnClickListener {
+            val bundle = Bundle()
+            /*bundle.putString("title", movie.title)
+            bundle.putString("date", movie.release_date)
+            bundle.putString("summary", movie.summary)
+            bundle.putInt("poster", movie.poster)*/
+            //val detailsFragment = DetailsFragment()
+            //detailsFragment.arguments = bundle
+            val action = MovieFragmentDirections.actionMovieFragmentToDetailsFragment(
+                movie.title,
+                movie.release_date,
+                movie.summary,
+                movie.poster
+            )
+            it.findNavController().navigate(action)
+        }
+        holder.bind(movie)
     }
+
 }
