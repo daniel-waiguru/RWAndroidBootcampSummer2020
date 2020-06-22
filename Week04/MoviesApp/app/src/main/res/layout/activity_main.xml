@@ -9,13 +9,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.google.android.material.appbar.MaterialToolbar
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:id="@+id/app_bar"
-            app:title="Movie App"
-            app:menu="@menu/main_menu"
-            style="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
+
     </com.google.android.material.appbar.AppBarLayout>
     <fragment
         android:id="@+id/nav_host_fragment"

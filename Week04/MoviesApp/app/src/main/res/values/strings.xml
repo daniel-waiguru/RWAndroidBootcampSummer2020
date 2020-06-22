@@ -16,4 +16,7 @@
     <string name="poster_for_the_selected_movie">Poster for the selected movie</string>
     <string name="trailer_image">Trailer Image</string>
     <string name="back_button">Back Button</string>
+    <string name="aboutText">Empire Movie App is developed by Daniel Waiguru, a passionate junior Android developer with interest in ML and AI</string>
+    <string name="ok_button">Ok</string>
+    <string name="name">Empire Movie Show</string>
 </resources>
