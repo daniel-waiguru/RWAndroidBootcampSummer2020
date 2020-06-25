@@ -18,22 +18,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:src="@drawable/crossings"
             android:scaleType="fitXY"
-            />
-        <!--<TextView
-            android:id="@+id/posterTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="@id/posterImageView"
-            app:layout_constraintBottom_toBottomOf="@id/posterImageView"
-            app:layout_constraintStart_toStartOf="@id/posterImageView"
-            app:layout_constraintEnd_toEndOf="@id/posterImageView"
-            android:gravity="center_horizontal"
-            android:text="Movie Title"
-            android:textColor="@color/textColorWhite"
-            android:layout_marginTop="550dp"
-            android:textAllCaps="true"
-            android:textSize="30dp"
-            />-->
+            android:contentDescription="@string/movie_poster" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
