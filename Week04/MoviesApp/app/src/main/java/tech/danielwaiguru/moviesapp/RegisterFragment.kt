@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.fragment_register.*
 
 
 class RegisterFragment : Fragment() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as AppCompatActivity).supportActionBar?.hide()
@@ -34,6 +33,7 @@ class RegisterFragment : Fragment() {
         }
         btn_register.setOnClickListener {
             userDetailsValidation()
+            //UserPrefs.saveUser(etName.text.toString(), etUsername.text.toString(), etPassword.text.toString())
         }
     }
     companion object {
@@ -44,7 +44,7 @@ class RegisterFragment : Fragment() {
     }
     private fun userDetailsValidation(){
         if (usernameValidation() && passwordValidation()){
-            val action = LoginFragmentDirections.actionLoginFragmentToMovieFragment2()
+            val action = RegisterFragmentDirections.actionRegisterFragmentToLoginFragment2()
             findNavController().navigate(action)
         }
     }
