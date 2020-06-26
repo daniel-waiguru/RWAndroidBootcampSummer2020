@@ -7,13 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
 
 
 class LoginFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        activity?.actionBar?.hide()
+        (activity as AppCompatActivity).supportActionBar?.hide()
     }
 
     override fun onCreateView(
