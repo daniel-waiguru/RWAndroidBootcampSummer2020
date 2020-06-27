@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_register.*
+import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
 
 
 class RegisterFragment : Fragment() {
@@ -33,7 +34,11 @@ class RegisterFragment : Fragment() {
         }
         btn_register.setOnClickListener {
             userDetailsValidation()
-            //UserPrefs.saveUser(etName.text.toString(), etUsername.text.toString(), etPassword.text.toString())
+            activity?.let {
+                val user = UserPrefRepository(it)
+                user.saveUser(etName.text.toString(), etUsername.text.toString(), etPassword.text.toString())
+            }
+
         }
     }
     companion object {
@@ -69,6 +74,11 @@ class RegisterFragment : Fragment() {
         etPassword.error = if (etPassword.text.toString().length < 5){
             isPasswordValid = false
             "Password should at least 5 characters"
+        }
+        else null
+        etCPassword.error = if (etCPassword.text.toString() != etPassword.text.toString()){
+            isPasswordValid = false
+            "Password do not match"
         }
         else null
         return isPasswordValid
