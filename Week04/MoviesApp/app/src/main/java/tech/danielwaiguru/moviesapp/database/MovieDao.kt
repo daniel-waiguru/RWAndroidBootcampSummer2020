@@ -11,7 +11,7 @@ interface MovieDao {
      * storing movies data
      */
     @Insert
-    fun insert(movie: Movie)
+    suspend fun insert(movie: List<Movie>)
     /**
      * retrieving all movies
      */
