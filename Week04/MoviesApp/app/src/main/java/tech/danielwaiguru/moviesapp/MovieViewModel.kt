@@ -17,4 +17,5 @@ class MovieViewModel(application: Application): AndroidViewModel(application) {
         allMovies = movieRepository.allMovies
     }
 
+
 }

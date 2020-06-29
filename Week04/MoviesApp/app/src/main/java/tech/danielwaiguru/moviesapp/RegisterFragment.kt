@@ -41,12 +41,7 @@ class RegisterFragment : Fragment() {
 
         }
     }
-    companion object {
 
-        @JvmStatic
-        fun newInstance() = RegisterFragment()
-
-    }
     private fun userDetailsValidation(){
         if (usernameValidation() && passwordValidation()){
             val action = RegisterFragmentDirections.actionRegisterFragmentToLoginFragment2()

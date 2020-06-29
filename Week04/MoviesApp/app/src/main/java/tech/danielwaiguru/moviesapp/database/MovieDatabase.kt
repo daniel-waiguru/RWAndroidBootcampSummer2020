@@ -45,95 +45,93 @@ abstract class MovieDatabase : RoomDatabase(){
                     val movieDao = database.movieDao()
                     val movieList = mutableListOf(
                         Movie(
-                            1,
-                            "2020-02-13",
-                            "First Man",
-                            "A sci-fi Tv series of the first human AI child",
-                            R.drawable.revenge
+                            release_date = "2020-02-13",
+                            title = "First Man",
+                            summary = "A sci-fi Tv series of the first human AI child",
+                            poster = R.drawable.revenge
                         ),
                         Movie(
-                            2,
-                            "2020-01-23",
-                            "Alex Rider",
-                            "A Tv series, Genre action, adventure, family, thriller, English language is used",
-                            R.drawable.alexrider
+                            release_date = "2020-01-23",
+                            title = "Alex Rider",
+                            summary = "A Tv series, Genre action, adventure, family, thriller, English language is used",
+                            poster = R.drawable.alexrider
                         ),
                         Movie(
-                            3,
-                            "2020-01-23",
-                            "Crossings Sword",
-                            "A 2020 animation, adventure and comedy english Tv series",
-                            R.drawable.crossings
+
+                            release_date = "2020-01-23",
+                            title = "Crossings Sword",
+                            summary = "A 2020 animation, adventure and comedy english Tv series",
+                            poster = R.drawable.crossings
                         ),
                         Movie(
-                            4,
-                            "2020-01-23",
-                            "Most Dangerous Game",
-                            "A 2020 action and thriller Tv series season one 15 complete episodes",
-                            R.drawable.dangergame
+
+                            release_date = "2020-01-23",
+                            title = "Most Dangerous Game",
+                            summary = "A 2020 action and thriller Tv series season one 15 complete episodes",
+                            poster = R.drawable.dangergame
                         ),
                         Movie(
-                            5,
-                            "2014-06-21",
-                            "From Dusk Till Down",
-                            "A 2014 action, thriller and drama Tv series recorded in english",
-                            R.drawable.deskdawn
+
+                            release_date = "2014-06-21",
+                            title = "From Dusk Till Down",
+                            summary = "A 2014 action, thriller and drama Tv series recorded in english",
+                            poster = R.drawable.deskdawn
                         ),
                         Movie(
-                            6,
-                            "2018-01-12",
-                            "Roswell New Mexico",
-                            "A 2018 Tv series recorded in mexico",
-                            R.drawable.roswell
+
+                            release_date = "2018-01-12",
+                            title = "Roswell New Mexico",
+                            summary = "A 2018 Tv series recorded in mexico",
+                            poster = R.drawable.roswell
                         ),
                         Movie(
-                            7,
-                            "2014-07-3",
-                            "The Search",
-                            "A 2014 Tv series, Genre dram and war, english language used",
-                            R.drawable.search
+
+                            release_date = "2014-07-3",
+                            title = "The Search",
+                            summary = "A 2014 Tv series, Genre dram and war, english language used",
+                            poster = R.drawable.search
                         ),
                         Movie(
-                            8,
-                            "2019-11-23",
-                            "The Titan Game",
-                            "A 2019 reality-tv Tv series recorded in english",
-                            R.drawable.titan
+
+                            release_date = "2019-11-23",
+                            title = "The Titan Game",
+                            summary = "A 2019 reality-tv Tv series recorded in english",
+                            poster = R.drawable.titan
                         ),
                         Movie(
-                            9,
-                            "2020-01-23",
-                            "Alex Rider",
-                            "A comedy Tv series season one complete",
-                            R.drawable.alexrider
+
+                            release_date = "2020-01-23",
+                            title = "Alex Rider",
+                            summary = "A comedy Tv series season one complete",
+                            poster = R.drawable.alexrider
                         ),
                         Movie(
-                            10,
-                            "2020-06-23",
-                            "Chissys Court",
-                            "A 2020 short and reality-tv season one tv series",
-                            R.drawable.court
+
+                            release_date = "2020-06-23",
+                            title = "Chissys Court",
+                            summary = "A 2020 short and reality-tv season one tv series",
+                            poster = R.drawable.court
                         ),
                         Movie(
-                            11,
-                            "2020-06-01",
-                            "Cursed",
-                            "A drama and fantasy Tv series season one complete season one",
-                            R.drawable.cursed
+
+                            release_date = "2020-06-01",
+                            title = "Cursed",
+                            summary = "A drama and fantasy Tv series season one complete season one",
+                            poster = R.drawable.cursed
                         ),
                         Movie(
-                            12,
-                            "2020-01-23",
-                            "Good Behavior",
-                            "A drama Tv series season one complete with ten episodes",
-                            R.drawable.goodbehavior
+
+                            release_date = "2020-01-23",
+                            title = "Good Behavior",
+                            summary = "A drama Tv series season one complete with ten episodes",
+                            poster = R.drawable.goodbehavior
                         ),
                         Movie(
-                            13,
-                            "2020-03-2",
-                            "Snow piercer",
-                            "A 2020 action, drama, sci-fi and thriller Tv series recorded in english",
-                            R.drawable.snow
+
+                            release_date = "2020-03-2",
+                            title = "Snow piercer",
+                            summary = "A 2020 action, drama, sci-fi and thriller Tv series recorded in english",
+                            poster = R.drawable.snow
                         )
 
 
