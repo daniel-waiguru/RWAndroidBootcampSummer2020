@@ -12,4 +12,7 @@ class UserPrefRepository(context: Context) {
     fun saveUser(user:User){
         sharedPrefs.edit().putBoolean(user.id, user.isLoggedin).apply()
     }
+    fun getUser(user: User): Boolean{
+        return sharedPrefs.getBoolean(user.id, true)
+    }
 }
