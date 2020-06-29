@@ -50,7 +50,7 @@
         android:layout_marginTop="200dp"
         app:layout_constraintTop_toTopOf="parent"
         app:startIconContentDescription="Your email"
-        app:startIconDrawable="@drawable/ic_email">
+        app:startIconDrawable="@drawable/ic_user">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etUser"
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:hint="@string/username"
-            android:inputType="textEmailAddress" />
+            android:inputType="textCapWords" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

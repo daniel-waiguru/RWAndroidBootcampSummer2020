@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_register.*
-import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
 
 
 class RegisterFragment : Fragment() {
@@ -35,8 +34,7 @@ class RegisterFragment : Fragment() {
         btn_register.setOnClickListener {
             userDetailsValidation()
             activity?.let {
-                val user = UserPrefRepository(it)
-                //user.saveUser(etName.text.toString(), etUsername.text.toString(), etPassword.text.toString())
+
             }
 
         }

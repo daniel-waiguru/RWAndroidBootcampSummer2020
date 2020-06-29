@@ -6,9 +6,6 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.replace
-import androidx.navigation.findNavController
-import kotlinx.android.synthetic.main.activity_main.*
 import tech.danielwaiguru.moviesapp.data.User
 import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
 

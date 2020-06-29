@@ -13,8 +13,7 @@
         <action
             android:id="@+id/action_movieFragment_to_detailsFragment"
             app:destination="@id/detailsFragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@anim/fragment_fade_exit" />
+            app:enterAnim="@android:anim/fade_in" />
         <action
             android:id="@+id/action_movieFragment_to_loginFragment"
             app:destination="@id/loginFragment" />

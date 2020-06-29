@@ -21,7 +21,6 @@ class MovieFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as AppCompatActivity).supportActionBar?.show()
-
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,4 +51,9 @@ class MovieFragment : Fragment() {
         }
     }
 
+    
+    override fun onDestroy() {
+        super.onDestroy()
+        (activity as AppCompatActivity).finish()
+    }
 }
