@@ -1,11 +1,12 @@
 package tech.danielwaiguru.moviesapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,6 +60,13 @@ class MainActivity : AppCompatActivity() {
 
         }
         aboutDialog.create().show()
+
+    }
+    /**
+     * Logout function
+     */
+    private fun logout(){
+        val userPrefRepository = UserPrefRepository(this)
 
     }
 }

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_movie.view.*
@@ -13,6 +14,7 @@ import kotlinx.android.synthetic.main.fragment_movie.view.*
 class MovieFragment : Fragment() {
     private lateinit var movieRecyclerView: RecyclerView
     private lateinit var movieAdapter: MovieAdapter
+    private lateinit var movieViewModel: MovieViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,6 +33,14 @@ class MovieFragment : Fragment() {
         movieRecyclerView.layoutManager = GridLayoutManager(context, 3)
         movieAdapter = MovieAdapter()
         movieRecyclerView.adapter = movieAdapter
+
+        /**
+         * Get an existing or new viewmodel
+         */
+        activity?.let {
+            movieViewModel = ViewModelProvider(it).get(MovieViewModel::class.java)
+
+        }
     }
 
 }

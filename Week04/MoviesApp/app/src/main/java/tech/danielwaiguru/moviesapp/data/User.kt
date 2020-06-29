@@ -1,7 +1,8 @@
 package tech.danielwaiguru.moviesapp.data
 
+import java.util.*
+
 data class User(
-    val name: String,
-    val username: String,
-    val password: String
+    val isLoggedin: Boolean = false,
+    val id: String = UUID.randomUUID().toString()
 )

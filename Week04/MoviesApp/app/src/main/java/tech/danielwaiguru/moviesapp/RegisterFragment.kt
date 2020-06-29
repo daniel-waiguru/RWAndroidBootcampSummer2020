@@ -36,7 +36,7 @@ class RegisterFragment : Fragment() {
             userDetailsValidation()
             activity?.let {
                 val user = UserPrefRepository(it)
-                user.saveUser(etName.text.toString(), etUsername.text.toString(), etPassword.text.toString())
+                //user.saveUser(etName.text.toString(), etUsername.text.toString(), etPassword.text.toString())
             }
 
         }

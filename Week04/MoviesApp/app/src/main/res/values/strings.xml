@@ -32,4 +32,6 @@
     <string name="policy">By signing up you agree to our conditions and privacy policy</string>
     <string name="hey_get_on_board">Hey, get on board</string>
     <string name="registered_sign_in">Registered? Sign In</string>
+    <string name="logout">Logout</string>
+    <string name="logout_option">Logout option</string>
 </resources>
