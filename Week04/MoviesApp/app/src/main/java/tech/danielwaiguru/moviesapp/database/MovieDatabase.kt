@@ -136,6 +136,7 @@ abstract class MovieDatabase : RoomDatabase(){
 
 
                     )
+                    movieDao.deleteAllMovies()
                     movieDao.insert(movieList)
                 }
             }
