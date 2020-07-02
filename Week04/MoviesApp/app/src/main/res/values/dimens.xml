@@ -5,4 +5,5 @@
     <dimen name="titleSize">22sp</dimen>
     <dimen name="subtitle">20sp</dimen>
     <dimen name="textSize">16sp</dimen>
+    <dimen name="marginTopSmall">20dp</dimen>
 </resources>
