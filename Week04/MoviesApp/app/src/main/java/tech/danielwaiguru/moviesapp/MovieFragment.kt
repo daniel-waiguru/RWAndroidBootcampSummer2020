@@ -1,5 +1,6 @@
 package tech.danielwaiguru.moviesapp
 
+import android.content.res.Configuration
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -36,7 +37,8 @@ class MovieFragment : Fragment() {
          * get a reference to recyclerview
          */
         movieRecyclerView = view.movies_rv
-        movieRecyclerView.layoutManager = GridLayoutManager(context, 3)
+        //movieRecyclerView.layoutManager = GridLayoutManager(context, 3)
+        recyclerViewSetup()
         movieAdapter = MovieAdapter()
         movieRecyclerView.adapter = movieAdapter
 
@@ -52,8 +54,21 @@ class MovieFragment : Fragment() {
     }
 
     
-    override fun onDestroy() {
+    /*override fun onDestroy() {
         super.onDestroy()
         (activity as AppCompatActivity).finish()
+    }*/
+    private fun recyclerViewSetup(){
+        when (resources.configuration.orientation) {
+            Configuration.ORIENTATION_PORTRAIT -> {
+                movieRecyclerView.layoutManager = GridLayoutManager(context, 3, RecyclerView.VERTICAL, false)
+            }
+            Configuration.ORIENTATION_LANDSCAPE -> {
+
+                movieRecyclerView.layoutManager = GridLayoutManager(context, 2, RecyclerView.HORIZONTAL, false)
+
+            }
+
+        }
     }
 }
