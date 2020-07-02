@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/movieFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/movieFragment"
@@ -13,8 +13,10 @@
         <action
             android:id="@+id/action_movieFragment_to_detailsFragment"
             app:destination="@id/detailsFragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@anim/fragment_fade_exit" />
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_movieFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
@@ -33,5 +35,26 @@
         <argument
             android:name="poster"
             app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="tech.danielwaiguru.moviesapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment2"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_movieFragment2"
+            app:destination="@id/movieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="tech.danielwaiguru.moviesapp.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment2"
+            app:destination="@id/loginFragment" />
     </fragment>
 </navigation>

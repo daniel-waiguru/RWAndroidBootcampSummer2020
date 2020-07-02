@@ -19,4 +19,19 @@
     <string name="ok_button">Ok</string>
     <string name="name">Empire Movie Show</string>
     <string name="movie_poster">Movie Poster</string>
+    <string name="login">Login</string>
+    <string name="password">Confirm password</string>
+    <string name="username">Username</string>
+    <string name="persons_name">Name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="remember_me_and_keep_me_signed_in">Remember me and keep me signed in</string>
+    <string name="new_user_sign_up">New user? Sign Up</string>
+    <string name="policy">By signing up you agree to our conditions and privacy policy</string>
+    <string name="hey_get_on_board">Hey, get on board</string>
+    <string name="registered_sign_in">Registered? Sign In</string>
+    <string name="logout">Logout</string>
+    <string name="logout_option">Logout option</string>
 </resources>
