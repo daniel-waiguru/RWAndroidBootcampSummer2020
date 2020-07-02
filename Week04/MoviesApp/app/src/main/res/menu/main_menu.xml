@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/about"
+        android:id="@+id/action_about"
+        app:showAsAction="never"
+        android:contentDescription="@string/app_information"
+        />
+    <item android:id="@+id/action_share"
+        android:title="@string/share"
+        app:showAsAction="never"
+        android:contentDescription="@string/share_the_app_with_friends_and_family"/>
+    <item android:id="@+id/action_settings"
+        android:title="@string/settings"
+        app:showAsAction="never"
+        android:contentDescription="@string/appsettings" />
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/nonActiveItems"
+        android:contentDescription="@string/search_your_favorite_movie"
+        android:title="@string/search_title" />
+
+</menu>

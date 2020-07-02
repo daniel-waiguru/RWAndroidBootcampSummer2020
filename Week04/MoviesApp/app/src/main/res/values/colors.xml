@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="textColorWhite">#FFF</color>
+    <color name="playIconColor">#E23328</color>
+    <color name="ratingStarsColor">#FFA000</color>
+    <color name="nonActiveItems">#8E8E8E</color>
+</resources>
