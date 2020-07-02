@@ -71,4 +71,7 @@ class MovieFragment : Fragment() {
 
         }
     }
+    companion object{
+        fun newInstance() = MovieFragment()
+    }
 }

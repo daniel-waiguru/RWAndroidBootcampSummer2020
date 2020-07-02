@@ -9,14 +9,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import kotlinx.android.synthetic.main.fragment_login.*
-import tech.danielwaiguru.moviesapp.data.User
 import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
 
 
 class LoginFragment : Fragment() {
+    private val userPrefRepository by lazy {
+        UserPrefRepository(requireActivity())
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as AppCompatActivity).supportActionBar?.hide()
+        isUserloggedIn()
     }
 
     override fun onCreateView(
@@ -27,16 +30,18 @@ class LoginFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_login, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         /**
          * login button on click listener
          */
         btn_login.setOnClickListener {
             if (userValidation()){
-                val action = LoginFragmentDirections.actionLoginFragmentToMovieFragment2()
-                saverUser()
-                it.findNavController().navigate(action)
+                saveUser()
+                requireActivity().supportFragmentManager.beginTransaction()
+                    .replace(R.id.nav_host_fragment, MovieFragment())
+                    .commit()
             }
         }
         txt_register.setOnClickListener {
@@ -71,11 +76,17 @@ class LoginFragment : Fragment() {
     /**
      * function to save user to shared preferences
      */
-    private fun saverUser(){
-        activity?.let {
-            val user = User(true)
-            val userPrefRepository = UserPrefRepository(it)
-            userPrefRepository.saveUser(user)
+    private fun saveUser(){
+        userPrefRepository.saveUser(true)
+    }
+    /**
+     * check if user is logged in or not
+     */
+    private fun isUserloggedIn(){
+        if (userPrefRepository.isUserLoggedIn()){
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.nav_host_fragment, MovieFragment())
+                .commit()
         }
     }
 

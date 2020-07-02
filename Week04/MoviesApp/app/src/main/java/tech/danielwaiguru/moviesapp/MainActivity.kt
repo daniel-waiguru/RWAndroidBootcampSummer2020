@@ -6,10 +6,12 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import tech.danielwaiguru.moviesapp.data.User
 import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
 
 class MainActivity : AppCompatActivity() {
+    private val userPrefRepository by lazy {
+        UserPrefRepository(this)
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -68,19 +70,13 @@ class MainActivity : AppCompatActivity() {
 
     }
     /**
-     * Logout function
+     * method to logout users
      */
     private fun logout(){
-        val user = User()
-        val userPrefRepository = UserPrefRepository(this)
-        if (userPrefRepository.getUser(user)){
-            user.isLoggedin = false
-            val frg = LoginFragment()
-            supportFragmentManager.beginTransaction().apply {
-                replace(R.id.nav_host_fragment, frg)
-                    .commit()
-            }
-        }
-
+        userPrefRepository.saveUser(false)
+        val loginFragment = LoginFragment()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.nav_host_fragment, loginFragment)
+            .commit()
     }
 }
