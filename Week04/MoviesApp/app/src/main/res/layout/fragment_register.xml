@@ -48,6 +48,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etName"
                     android:layout_width="match_parent"
+                    android:imeOptions="flagNoFullscreen"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin"
                     android:hint="@string/persons_name"
@@ -69,6 +70,7 @@
                     android:id="@+id/etUsername"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:imeOptions="flagNoFullscreen"
                     android:layout_margin="@dimen/margin"
                     android:hint="@string/username"
                     android:inputType="textCapWords" />
@@ -90,6 +92,7 @@
                     android:id="@+id/etPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:imeOptions="flagNoFullscreen"
                     android:layout_margin="@dimen/margin"
                     android:hint="@string/password"
                     android:inputType="textPassword" />
@@ -108,6 +111,7 @@
                     android:id="@+id/etCPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:imeOptions="flagNoFullscreen"
                     android:layout_margin="@dimen/margin"
                     android:hint="@string/password"
                     />
