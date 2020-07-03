@@ -1,4 +1,4 @@
-package tech.danielwaiguru.moviesapp
+package tech.danielwaiguru.moviesapp.ui.register
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_register.*
-
+import tech.danielwaiguru.moviesapp.R
 
 class RegisterFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +28,8 @@ class RegisterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         text_login.setOnClickListener {
-            val action = RegisterFragmentDirections.actionRegisterFragmentToLoginFragment2()
+            val action =
+                RegisterFragmentDirections.actionRegisterFragmentToLoginFragment2()
             it.findNavController().navigate(action)
         }
         btn_register.setOnClickListener {
@@ -42,7 +43,8 @@ class RegisterFragment : Fragment() {
 
     private fun userDetailsValidation(){
         if (usernameValidation() && passwordValidation()){
-            val action = RegisterFragmentDirections.actionRegisterFragmentToLoginFragment2()
+            val action =
+                RegisterFragmentDirections.actionRegisterFragmentToLoginFragment2()
             findNavController().navigate(action)
         }
     }

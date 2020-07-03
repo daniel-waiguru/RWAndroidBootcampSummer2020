@@ -1,4 +1,4 @@
-package tech.danielwaiguru.moviesapp
+package tech.danielwaiguru.moviesapp.ui.movie
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -12,6 +12,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_movie.view.*
+import tech.danielwaiguru.moviesapp.adapters.MovieAdapter
+import tech.danielwaiguru.moviesapp.viewmodels.MovieViewModel
+import tech.danielwaiguru.moviesapp.R
 
 
 class MovieFragment : Fragment() {

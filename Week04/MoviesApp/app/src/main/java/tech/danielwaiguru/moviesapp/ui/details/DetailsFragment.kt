@@ -1,4 +1,4 @@
-package tech.danielwaiguru.moviesapp
+package tech.danielwaiguru.moviesapp.ui.details
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_details.*
+
+import tech.danielwaiguru.moviesapp.R
 
 
 class DetailsFragment : Fragment() {
@@ -23,7 +25,10 @@ class DetailsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         arguments?.let {
-            val bundle = DetailsFragmentArgs.fromBundle(it)
+            val bundle =
+                DetailsFragmentArgs.fromBundle(
+                    it
+                )
             poster.setImageResource(it.getInt("poster"))
             movie_title.text = bundle.title
             release_date.text = bundle.date

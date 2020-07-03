@@ -1,4 +1,4 @@
-package tech.danielwaiguru.moviesapp
+package tech.danielwaiguru.moviesapp.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+
+import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.database.Movie
+import tech.danielwaiguru.moviesapp.ui.movie.MovieFragmentDirections
 
 class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
@@ -34,12 +37,13 @@ private var movieList = emptyList<Movie>()
         holder.posterImage.setImageResource(movie.poster)
         holder.itemView.setOnClickListener {
 
-            val action = MovieFragmentDirections.actionMovieFragmentToDetailsFragment(
-                movie.title,
-                movie.release_date,
-                movie.summary,
-                movie.poster
-            )
+            val action =
+                MovieFragmentDirections.actionMovieFragmentToDetailsFragment(
+                    movie.title,
+                    movie.release_date,
+                    movie.summary,
+                    movie.poster
+                )
             it.findNavController().navigate(action)
         }
         holder.bind(movie)

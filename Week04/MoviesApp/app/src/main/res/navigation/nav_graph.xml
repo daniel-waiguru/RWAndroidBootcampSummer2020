@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/movieFragment"
-        android:name="tech.danielwaiguru.moviesapp.MovieFragment"
+        android:name="tech.danielwaiguru.moviesapp.ui.movie.MovieFragment"
         android:label="fragment_movie"
         tools:layout="@layout/fragment_movie" >
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="tech.danielwaiguru.moviesapp.DetailsFragment"
+        android:name="tech.danielwaiguru.moviesapp.ui.details.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" >
         <argument
@@ -38,7 +38,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="tech.danielwaiguru.moviesapp.LoginFragment"
+        android:name="tech.danielwaiguru.moviesapp.ui.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -50,7 +50,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="tech.danielwaiguru.moviesapp.RegisterFragment"
+        android:name="tech.danielwaiguru.moviesapp.ui.register.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" >
         <action

@@ -1,4 +1,4 @@
-package tech.danielwaiguru.moviesapp
+package tech.danielwaiguru.moviesapp.viewmodels
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

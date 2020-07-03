@@ -1,4 +1,4 @@
-package tech.danielwaiguru.moviesapp
+package tech.danielwaiguru.moviesapp.ui.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import kotlinx.android.synthetic.main.fragment_login.*
+
+import tech.danielwaiguru.moviesapp.ui.movie.MovieFragment
+import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
 
 
@@ -40,12 +43,16 @@ class LoginFragment : Fragment() {
             if (userValidation()){
                 saveUser()
                 requireActivity().supportFragmentManager.beginTransaction()
-                    .replace(R.id.nav_host_fragment, MovieFragment())
+                    .replace(
+                        R.id.nav_host_fragment,
+                        MovieFragment()
+                    )
                     .commit()
             }
         }
         txt_register.setOnClickListener {
-            val  action = LoginFragmentDirections.actionLoginFragmentToRegisterFragment2()
+            val  action =
+                LoginFragmentDirections.actionLoginFragmentToRegisterFragment2()
             it.findNavController().navigate(action)
         }
     }
@@ -85,7 +92,10 @@ class LoginFragment : Fragment() {
     private fun isUserloggedIn(){
         if (userPrefRepository.isUserLoggedIn()){
             requireActivity().supportFragmentManager.beginTransaction()
-                .replace(R.id.nav_host_fragment, MovieFragment())
+                .replace(
+                    R.id.nav_host_fragment,
+                    MovieFragment()
+                )
                 .commit()
         }
     }
