@@ -37,7 +37,6 @@ class MovieFragment : Fragment() {
          * get a reference to recyclerview
          */
         movieRecyclerView = view.movies_rv
-        //movieRecyclerView.layoutManager = GridLayoutManager(context, 3)
         recyclerViewSetup()
         movieAdapter = MovieAdapter()
         movieRecyclerView.adapter = movieAdapter
@@ -53,11 +52,6 @@ class MovieFragment : Fragment() {
         }
     }
 
-    
-    /*override fun onDestroy() {
-        super.onDestroy()
-        (activity as AppCompatActivity).finish()
-    }*/
     private fun recyclerViewSetup(){
         when (resources.configuration.orientation) {
             Configuration.ORIENTATION_PORTRAIT -> {
@@ -71,7 +65,5 @@ class MovieFragment : Fragment() {
 
         }
     }
-    companion object{
-        fun newInstance() = MovieFragment()
-    }
+
 }
