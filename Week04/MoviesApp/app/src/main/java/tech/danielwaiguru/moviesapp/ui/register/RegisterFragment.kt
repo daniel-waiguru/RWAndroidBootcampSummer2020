@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_register.*
 import tech.danielwaiguru.moviesapp.R
+import tech.danielwaiguru.moviesapp.ui.login.LoginFragment
 
 class RegisterFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,9 +28,7 @@ class RegisterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         text_login.setOnClickListener {
-            val action =
-                RegisterFragmentDirections.actionRegisterFragmentToLoginFragment2()
-            it.findNavController().navigate(action)
+            initUi()
         }
         btn_register.setOnClickListener {
             userDetailsValidation()
@@ -77,5 +75,11 @@ class RegisterFragment : Fragment() {
         }
         else null
         return isPasswordValid
+    }
+    private fun initUi(){
+        val loginFragment = LoginFragment()
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.nav_host_fragment, loginFragment)
+            .commit()
     }
 }

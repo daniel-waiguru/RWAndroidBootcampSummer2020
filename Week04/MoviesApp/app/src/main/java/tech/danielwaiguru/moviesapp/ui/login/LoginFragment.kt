@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -81,7 +82,7 @@ class LoginFragment : Fragment() {
      * function to save user to shared preferences
      */
     private fun saveUser(){
-        userPrefRepository.saveUser(true)
+        onCheckBoxChecked(ch_remember_me)
     }
     /**
      * check if user is logged in or not
@@ -102,5 +103,16 @@ class LoginFragment : Fragment() {
             .replace(R.id.nav_host_fragment, registerFragment)
             .addToBackStack(null)
             .commit()
+    }
+    private fun onCheckBoxChecked(view: View){
+        if (view is CheckBox){
+            val checked: Boolean = view.isChecked
+            if (checked){
+                userPrefRepository.saveUser(true)
+            }
+            else{
+                userPrefRepository.saveUser(false)
+            }
+        }
     }
 }
