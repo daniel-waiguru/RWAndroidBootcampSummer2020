@@ -5,16 +5,22 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_movie.view.*
 import tech.danielwaiguru.moviesapp.adapters.MovieAdapter
 import tech.danielwaiguru.moviesapp.viewmodels.MovieViewModel
 import tech.danielwaiguru.moviesapp.R
+import tech.danielwaiguru.moviesapp.database.Movie
+import tech.danielwaiguru.moviesapp.ui.details.DetailsFragment
 
 
 class MovieFragment : Fragment() {
@@ -41,7 +47,7 @@ class MovieFragment : Fragment() {
          */
         movieRecyclerView = view.movies_rv
         recyclerViewSetup()
-        movieAdapter = MovieAdapter()
+        movieAdapter = MovieAdapter { movie -> onMovieItemClicked(movie)}
         movieRecyclerView.adapter = movieAdapter
 
         /**
@@ -68,5 +74,20 @@ class MovieFragment : Fragment() {
 
         }
     }
-
+    private fun onMovieItemClicked(movie: Movie){
+        val  action = MovieFragmentDirections.actionMovieFragmentToDetailsFragment2(
+            movie.title,
+            movie.release_date,
+            movie.summary,
+            movie.poster
+        )
+        val bundle = Bundle()
+        bundle.putParcelable("movie", movie)
+        val detailsFragment = DetailsFragment()
+        detailsFragment.arguments = bundle
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.nav_host_fragment, detailsFragment)
+            .addToBackStack(null)
+            .commit()
+    }
 }

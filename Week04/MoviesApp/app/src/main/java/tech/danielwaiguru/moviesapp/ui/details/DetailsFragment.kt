@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_details.*
 
 import tech.danielwaiguru.moviesapp.R
+import tech.danielwaiguru.moviesapp.database.Movie
 
 
 class DetailsFragment : Fragment() {
@@ -25,14 +26,12 @@ class DetailsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         arguments?.let {
-            val bundle =
-                DetailsFragmentArgs.fromBundle(
-                    it
-                )
-            poster.setImageResource(it.getInt("poster"))
-            movie_title.text = bundle.title
-            release_date.text = bundle.date
-            movie_description.text = bundle.desc
+
+            val movie: Movie? = it.getParcelable("movie")
+            poster.setImageResource(movie!!.poster)
+            movie_title.text = movie.title
+            release_date.text = movie.release_date
+            movie_description.text = movie.summary
         }
     }
 

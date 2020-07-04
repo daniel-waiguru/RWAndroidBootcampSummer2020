@@ -6,12 +6,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-
 import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.database.Movie
 import tech.danielwaiguru.moviesapp.ui.movie.MovieFragmentDirections
 
-class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
+
+class MovieAdapter(private val listener: (Movie)-> Unit) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
 
 private var movieList = emptyList<Movie>()
     inner class MovieViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
@@ -35,16 +35,17 @@ private var movieList = emptyList<Movie>()
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         val movie = movieList[position]
         holder.posterImage.setImageResource(movie.poster)
-        holder.itemView.setOnClickListener {
-
-            val action =
-                MovieFragmentDirections.actionMovieFragmentToDetailsFragment(
+        /*holder.itemView.setOnClickListener {
+            val action = MovieFragmentDirections.actionMovieFragmentToDetailsFragment2(
                     movie.title,
                     movie.release_date,
                     movie.summary,
                     movie.poster
                 )
             it.findNavController().navigate(action)
+        }*/
+        holder.itemView.setOnClickListener {
+            listener(movie)
         }
         holder.bind(movie)
     }
@@ -52,5 +53,4 @@ private var movieList = emptyList<Movie>()
         this.movieList = movies
         notifyDataSetChanged()
     }
-
 }

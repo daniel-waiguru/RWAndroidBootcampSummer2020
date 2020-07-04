@@ -11,12 +11,11 @@
         android:label="fragment_movie"
         tools:layout="@layout/fragment_movie" >
         <action
-            android:id="@+id/action_movieFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment"
-            app:enterAnim="@android:anim/fade_in" />
-        <action
             android:id="@+id/action_movieFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_movieFragment_to_detailsFragment2"
+            app:destination="@id/detailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
