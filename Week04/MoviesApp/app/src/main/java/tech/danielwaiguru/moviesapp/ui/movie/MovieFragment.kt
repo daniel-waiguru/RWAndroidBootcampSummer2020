@@ -75,12 +75,7 @@ class MovieFragment : Fragment() {
         }
     }
     private fun onMovieItemClicked(movie: Movie){
-        val  action = MovieFragmentDirections.actionMovieFragmentToDetailsFragment2(
-            movie.title,
-            movie.release_date,
-            movie.summary,
-            movie.poster
-        )
+
         val bundle = Bundle()
         bundle.putParcelable("movie", movie)
         val detailsFragment = DetailsFragment()

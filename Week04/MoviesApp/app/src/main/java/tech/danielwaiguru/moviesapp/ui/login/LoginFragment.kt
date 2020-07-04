@@ -7,12 +7,11 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
 import kotlinx.android.synthetic.main.fragment_login.*
-
-import tech.danielwaiguru.moviesapp.ui.movie.MovieFragment
 import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
+import tech.danielwaiguru.moviesapp.ui.movie.MovieFragment
+import tech.danielwaiguru.moviesapp.ui.register.RegisterFragment
 
 
 class LoginFragment : Fragment() {
@@ -51,9 +50,7 @@ class LoginFragment : Fragment() {
             }
         }
         txt_register.setOnClickListener {
-            val  action =
-                LoginFragmentDirections.actionLoginFragmentToRegisterFragment2()
-            it.findNavController().navigate(action)
+            initUi()
         }
     }
 
@@ -99,5 +96,11 @@ class LoginFragment : Fragment() {
                 .commit()
         }
     }
-
+    private fun initUi(){
+        val registerFragment = RegisterFragment()
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.nav_host_fragment, registerFragment)
+            .addToBackStack(null)
+            .commit()
+    }
 }
