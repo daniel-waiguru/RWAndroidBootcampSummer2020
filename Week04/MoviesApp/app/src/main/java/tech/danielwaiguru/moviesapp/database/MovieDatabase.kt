@@ -8,8 +8,9 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import tech.danielwaiguru.moviesapp.R
+import tech.danielwaiguru.moviesapp.models.User
 
-@Database(entities = [Movie::class], version = 1, exportSchema = false)
+@Database(entities = [Movie::class, User::class], version = 1, exportSchema = false)
 abstract class MovieDatabase : RoomDatabase(){
     abstract fun movieDao(): MovieDao
 
