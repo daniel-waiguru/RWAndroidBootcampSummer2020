@@ -4,14 +4,20 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
+import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.fragment_register.*
 import tech.danielwaiguru.moviesapp.R
+import tech.danielwaiguru.moviesapp.models.User
 import tech.danielwaiguru.moviesapp.ui.login.LoginFragment
+import tech.danielwaiguru.moviesapp.viewmodels.UserViewModel
 
 class RegisterFragment : Fragment() {
+    private val userViewModel by lazy {
+        ViewModelProvider(this).get(UserViewModel::class.java)
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as AppCompatActivity).supportActionBar?.hide()
@@ -31,20 +37,12 @@ class RegisterFragment : Fragment() {
             initUi()
         }
         btn_register.setOnClickListener {
-            userDetailsValidation()
-            activity?.let {
-
-            }
-
+            registerUser()
         }
     }
 
-    private fun userDetailsValidation(){
-        if (usernameValidation() && passwordValidation()){
-            val action =
-                RegisterFragmentDirections.actionRegisterFragmentToLoginFragment2()
-            findNavController().navigate(action)
-        }
+    private fun userDetailsValidation(): Boolean {
+       return usernameValidation() && passwordValidation()
     }
     private fun usernameValidation(): Boolean {
 
@@ -77,6 +75,23 @@ class RegisterFragment : Fragment() {
         return isPasswordValid
     }
     private fun initUi(){
+        val loginFragment = LoginFragment()
+        requireActivity().supportFragmentManager.beginTransaction()
+            .replace(R.id.nav_host_fragment, loginFragment)
+            .commit()
+    }
+    private fun registerUser(){
+        if (userDetailsValidation()){
+            val name = etName.text.toString()
+            val username = etUsername.text.toString()
+            val password = etPassword.text.toString()
+            val user = User(name = name, username = username, password = password)
+            userViewModel.registerUser(user)
+        }
+    }
+    private fun initLoginUi(){
+        registerUser()
+        Toast.makeText(activity, "Registered successfully", Toast.LENGTH_SHORT).show()
         val loginFragment = LoginFragment()
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.nav_host_fragment, loginFragment)
