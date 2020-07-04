@@ -13,7 +13,7 @@ import tech.danielwaiguru.moviesapp.models.User
 @Database(entities = [Movie::class, User::class], version = 1, exportSchema = false)
 abstract class MovieDatabase : RoomDatabase(){
     abstract fun movieDao(): MovieDao
-
+    abstract fun userDao(): UserDao
     companion object{
         @Volatile
         private var INSTANCE: MovieDatabase? = null
