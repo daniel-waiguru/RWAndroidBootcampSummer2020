@@ -8,12 +8,11 @@ import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_details.*
 
 import tech.danielwaiguru.moviesapp.R
+import tech.danielwaiguru.moviesapp.adapters.MovieAdapter
 import tech.danielwaiguru.moviesapp.database.Movie
 
 
 class DetailsFragment : Fragment() {
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,6 +33,4 @@ class DetailsFragment : Fragment() {
             movie_description.text = movie.summary
         }
     }
-
-
 }
