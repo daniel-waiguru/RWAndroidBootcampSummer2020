@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import kotlinx.android.synthetic.main.fragment_register.*
 import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.models.User
@@ -15,9 +16,10 @@ import tech.danielwaiguru.moviesapp.ui.login.LoginFragment
 import tech.danielwaiguru.moviesapp.viewmodels.UserViewModel
 
 class RegisterFragment : Fragment() {
-    private val userViewModel by lazy {
+    /*private val userViewModel by lazy {
         ViewModelProvider(this).get(UserViewModel::class.java)
-    }
+    }*/
+    private lateinit var userViewModel: UserViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as AppCompatActivity).supportActionBar?.hide()
@@ -33,11 +35,14 @@ class RegisterFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        activity?.let {
+            userViewModel = ViewModelProvider(it).get(UserViewModel::class.java)
+        }
         text_login.setOnClickListener {
             initUi()
         }
         btn_register.setOnClickListener {
-            registerUser()
+            initLoginUi()
         }
     }
 
