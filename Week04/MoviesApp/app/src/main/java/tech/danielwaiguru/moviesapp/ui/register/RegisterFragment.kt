@@ -8,7 +8,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.lifecycleScope
 import kotlinx.android.synthetic.main.fragment_register.*
 import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.models.User

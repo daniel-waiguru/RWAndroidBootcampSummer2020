@@ -6,9 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_details.*
-
 import tech.danielwaiguru.moviesapp.R
-import tech.danielwaiguru.moviesapp.adapters.MovieAdapter
 import tech.danielwaiguru.moviesapp.database.Movie
 
 

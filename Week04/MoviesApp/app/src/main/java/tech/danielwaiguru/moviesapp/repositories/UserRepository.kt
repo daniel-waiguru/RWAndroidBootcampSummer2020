@@ -12,7 +12,6 @@ class UserRepository(private val userDao: UserDao) {
     }
     fun loginUser(username: String, password: String): Boolean{
         val user: User? = userDao.loginUser(username)
-        //return user?.password == password
         val pass = user?.password.toString()
         return when (password) {
             pass -> true
