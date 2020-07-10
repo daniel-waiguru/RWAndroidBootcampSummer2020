@@ -6,4 +6,6 @@
     <string name="remember_me_and_keep_me_signed_in">"Remember me "</string>
     <string name="login">Login</string>
     <string name="new_user_sign_up">New User? SignUp</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
 </resources>

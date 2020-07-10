@@ -3,5 +3,6 @@
     <dimen name="margin_end">16dp</dimen>
     <dimen name="margin_top">4dp</dimen>
     <dimen name="titleSize">22sp</dimen>
+    <dimen name="margin">16dp</dimen>
 
 </resources>
