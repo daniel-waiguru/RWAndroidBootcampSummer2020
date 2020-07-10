@@ -1,8 +1,8 @@
 package tech.danielwaiguru.estudy
 
-import android.content.res.Configuration
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
@@ -20,7 +20,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setUpRecyclerView()
-        bookViewModel.al
+        bookViewModel.allBooks.observe(this, Observer {booksList ->
+            booksList?.let {
+                bookAdapter.submitList(it)
+            }
+
+        })
     }
     private fun setUpRecyclerView(){
         books_rv.layoutManager = LinearLayoutManager(this)
