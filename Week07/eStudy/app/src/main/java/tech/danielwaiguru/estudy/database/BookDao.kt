@@ -10,7 +10,7 @@ import tech.danielwaiguru.estudy.models.Book
 @Dao
 interface BookDao {
     @Insert
-    suspend fun insertBook(book: Book)
+    suspend fun insertBook(book: List<Book>)
     @Query("SELECT * FROM books")
     fun getAllBooks(): LiveData<List<Book>>
     @Delete

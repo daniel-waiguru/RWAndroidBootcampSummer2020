@@ -17,7 +17,7 @@ class BookViewModel(context: Context): ViewModel() {
         bookRepository = BookRepository(bookDao)
         allBooks = bookRepository.allBooks
     }
-    fun insert(book: Book) = viewModelScope.launch {
+    fun insert(book: List<Book>) = viewModelScope.launch {
         bookRepository.insert(book)
     }
     fun delete(book: Book) = viewModelScope.launch {

@@ -1,4 +1,4 @@
-package tech.danielwaiguru.estudy.networking
+package tech.danielwaiguru.estudy.networking.response
 
 import kotlinx.serialization.Serializable
 import tech.danielwaiguru.estudy.models.Book

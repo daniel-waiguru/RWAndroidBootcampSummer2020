@@ -4,6 +4,7 @@ import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 import tech.danielwaiguru.estudy.BuildConfig
+import tech.danielwaiguru.estudy.networking.response.BooksResponse
 
 const val API_KEY : String = BuildConfig.key
 interface BooksApiService {
