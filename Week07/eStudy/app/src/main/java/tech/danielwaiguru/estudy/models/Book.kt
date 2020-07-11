@@ -7,10 +7,5 @@ import androidx.room.PrimaryKey
 data class Book(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
-    val volumeInfo: VolumeInfo,
-    val publisher: String,
-    val publishedDate: String,
-    val description: String,
-    val averageRating: String,
-    val imageLinks: List<String>
+    val volumeInfo: VolumeInfo
 )
