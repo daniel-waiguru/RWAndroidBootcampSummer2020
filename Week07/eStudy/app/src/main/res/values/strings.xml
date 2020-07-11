@@ -8,4 +8,5 @@
     <string name="new_user_sign_up">New User? SignUp</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="book_cover_page">Book cover page</string>
 </resources>

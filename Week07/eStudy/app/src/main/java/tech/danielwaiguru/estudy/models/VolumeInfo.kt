@@ -6,8 +6,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class VolumeInfo(
     val title: String,
-    /*@Embedded
-    val authors: Authors,*/
+    val subtitle: String,
     val publisher: String,
     val publishedDate: String,
     val description: String,

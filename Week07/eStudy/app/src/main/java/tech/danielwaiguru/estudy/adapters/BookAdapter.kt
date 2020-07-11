@@ -8,15 +8,15 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import tech.danielwaiguru.estudy.R
 import tech.danielwaiguru.estudy.models.Book
 
 class BookAdapter: ListAdapter<Book, BookAdapter.BookViewHolder>(BooksDiffCallback()) {
-    private val booksList = mutableListOf<Book>()
     inner class BookViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val book_cover: ImageView = itemView.findViewById(R.id.book_cover)
         val title: TextView = itemView.findViewById(R.id.book_title)
-        val subtitle = itemView.findViewById<TextView>(R.id.book_subtitle)
+        val subtitle: TextView = itemView.findViewById(R.id.book_subtitle)
         val publisher: TextView = itemView.findViewById(R.id.book_publisher)
         val date: TextView = itemView.findViewById(R.id.date_published)
     }
@@ -47,10 +47,10 @@ class BookAdapter: ListAdapter<Book, BookAdapter.BookViewHolder>(BooksDiffCallba
         holder: BookViewHolder,
         position: Int
     ) {
-        val book = booksList[position]
-        holder.book_cover.setImageResource(book.volumeInfo.imageLinks.imageLinks.toInt())
+        val book = getItem(position)
+        Picasso.get().load(book.volumeInfo.imageLinks.imageLinks).into(holder.book_cover)
         holder.title.text = book.volumeInfo.title
-        //holder.subtitle.text = book.volumeInfo.
+        holder.subtitle.text = book.volumeInfo.subtitle
         holder.publisher.text = book.volumeInfo.publisher
         holder.date.text = book.volumeInfo.publishedDate
     }

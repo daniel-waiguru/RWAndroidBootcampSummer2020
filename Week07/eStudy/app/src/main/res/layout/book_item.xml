@@ -1,69 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:elevation="10dp">
 
-    <ImageView
-        android:id="@+id/book_cover"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        android:layout_margin="16dp"
-        android:contentDescription="Book cover page"
-        android:src="@drawable/ic_books"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/book_cover"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/book_cover_page"
+            android:src="@drawable/ic_books"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/book_title"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="@dimen/margin_end"
-        android:layout_marginEnd="@dimen/margin_end"
-        android:text="Book title"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/book_cover"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/book_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/margin_end"
+            android:layout_marginEnd="@dimen/margin_end"
 
-    <TextView
-        android:id="@+id/book_subtitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="@dimen/margin_top"
-        android:layout_marginEnd="@dimen/margin_end"
-        android:text="Book subtitle"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/book_cover"
-        app:layout_constraintTop_toBottomOf="@id/book_title" />
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/book_cover"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/book_publisher"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Publisher"
-        app:layout_constraintStart_toStartOf="@id/book_subtitle"
-        app:layout_constraintTop_toBottomOf="@id/book_subtitle"
-        android:layout_marginEnd="@dimen/margin_end"
-        android:layout_marginTop="@dimen/margin_top"
-        />
+        <TextView
+            android:id="@+id/book_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginEnd="@dimen/margin_end"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/book_cover"
+            app:layout_constraintTop_toBottomOf="@id/book_title" />
 
-    <TextView
-        android:id="@+id/date_published"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_top"
-        android:layout_marginEnd="@dimen/margin_end"
-        android:text="date"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
-        app:layout_constraintStart_toEndOf="@id/book_publisher"
-        app:layout_constraintTop_toBottomOf="@id/book_subtitle" />
+        <TextView
+            android:id="@+id/book_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/book_subtitle"
+            app:layout_constraintTop_toBottomOf="@id/book_subtitle"
+            android:layout_marginEnd="@dimen/margin_end"
+            android:layout_marginTop="@dimen/margin_top"
+            />
 
+        <TextView
+            android:id="@+id/date_published"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginEnd="@dimen/margin_end"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.922"
+            app:layout_constraintStart_toEndOf="@id/book_publisher"
+            app:layout_constraintTop_toBottomOf="@id/book_subtitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
