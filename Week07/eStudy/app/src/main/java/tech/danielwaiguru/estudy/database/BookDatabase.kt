@@ -1,10 +1,13 @@
 package tech.danielwaiguru.estudy.database
 
 import android.content.Context
+import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import tech.danielwaiguru.estudy.models.Book
 
-abstract class BookDatabase(context: Context): RoomDatabase() {
+@Database(entities = [Book::class], version = 1, exportSchema = false)
+abstract class BookDatabase: RoomDatabase() {
     abstract fun bookDao(): BookDao
 
     /**
@@ -15,17 +18,16 @@ abstract class BookDatabase(context: Context): RoomDatabase() {
         private var INSTANCE: BookDatabase? = null
 
         fun getDatabaseInstance(context: Context): BookDatabase{
-            val tempInstance = INSTANCE
-            if (tempInstance != null){
-                return tempInstance
-            }
             synchronized(this){
-                val instance = Room.databaseBuilder(
-                    context.applicationContext,
-                    BookDatabase::class.java,
-                    "books.db"
-                ).build()
-                INSTANCE = instance
+                var instance = INSTANCE
+                if (instance == null){
+                    instance = Room.databaseBuilder(
+                        context.applicationContext,
+                        BookDatabase::class.java,
+                        "books.db"
+                    ).build()
+                    INSTANCE = instance
+                }
                 return instance
             }
         }
