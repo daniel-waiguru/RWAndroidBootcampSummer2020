@@ -14,11 +14,11 @@ import tech.danielwaiguru.estudy.models.Book
 class BookAdapter: ListAdapter<Book, BookAdapter.BookViewHolder>(BooksDiffCallback()) {
     private val booksList = mutableListOf<Book>()
     inner class BookViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        val book_cover = itemView.findViewById<ImageView>(R.id.book_cover)
-        val title = itemView.findViewById<TextView>(R.id.book_title)
+        val book_cover: ImageView = itemView.findViewById(R.id.book_cover)
+        val title: TextView = itemView.findViewById(R.id.book_title)
         val subtitle = itemView.findViewById<TextView>(R.id.book_subtitle)
-        val publisher = itemView.findViewById<TextView>(R.id.book_publisher)
-        val date = itemView.findViewById<TextView>(R.id.date_published)
+        val publisher: TextView = itemView.findViewById(R.id.book_publisher)
+        val date: TextView = itemView.findViewById(R.id.date_published)
     }
     class BooksDiffCallback: DiffUtil.ItemCallback<Book>() {
         override fun areItemsTheSame(oldItem: Book, newItem: Book): Boolean {
@@ -48,9 +48,10 @@ class BookAdapter: ListAdapter<Book, BookAdapter.BookViewHolder>(BooksDiffCallba
         position: Int
     ) {
         val book = booksList[position]
-        //holder.book_cover.setImageResource()
-       /* holder.title.text = book.volumeInfo.title
-        holder.publisher.text = book.publisher
-        holder.date.text = book.publishedDate*/
+        holder.book_cover.setImageResource(book.volumeInfo.imageLinks.imageLinks.toInt())
+        holder.title.text = book.volumeInfo.title
+        //holder.subtitle.text = book.volumeInfo.
+        holder.publisher.text = book.volumeInfo.publisher
+        holder.date.text = book.volumeInfo.publishedDate
     }
 }

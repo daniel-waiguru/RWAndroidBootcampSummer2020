@@ -30,7 +30,7 @@ fun retrofitBuilder(): Retrofit{
 }
 
 object BooksApiServiceBuilder{
-    val booksApi by lazy {
+    val booksApi: BooksApiService by lazy {
         retrofitBuilder().create(BooksApiService::class.java)
     }
 }

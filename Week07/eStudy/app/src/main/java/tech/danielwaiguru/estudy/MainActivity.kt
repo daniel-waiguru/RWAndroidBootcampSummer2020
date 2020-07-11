@@ -6,7 +6,16 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import tech.danielwaiguru.estudy.adapters.BookAdapter
+import tech.danielwaiguru.estudy.models.Book
+import tech.danielwaiguru.estudy.networking.BooksApiServiceBuilder
+import tech.danielwaiguru.estudy.networking.BooksResponse
+import tech.danielwaiguru.estudy.networking.Failure
+import tech.danielwaiguru.estudy.networking.Result
+import tech.danielwaiguru.estudy.networking.Success
 import tech.danielwaiguru.estudy.viewmodels.BookViewModel
 
 class MainActivity : AppCompatActivity() {
