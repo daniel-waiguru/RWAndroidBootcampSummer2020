@@ -1,5 +1,8 @@
 package tech.danielwaiguru.estudy.models
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class VolumeInfo(
     val title: String,
     val authors: Authors,

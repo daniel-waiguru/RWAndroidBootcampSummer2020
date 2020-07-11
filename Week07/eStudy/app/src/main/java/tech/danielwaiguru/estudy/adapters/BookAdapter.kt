@@ -49,8 +49,8 @@ class BookAdapter: ListAdapter<Book, BookAdapter.BookViewHolder>(BooksDiffCallba
     ) {
         val book = booksList[position]
         //holder.book_cover.setImageResource()
-        holder.title.text = book.volumeInfo.title
+       /* holder.title.text = book.volumeInfo.title
         holder.publisher.text = book.publisher
-        holder.date.text = book.publishedDate
+        holder.date.text = book.publishedDate*/
     }
 }
