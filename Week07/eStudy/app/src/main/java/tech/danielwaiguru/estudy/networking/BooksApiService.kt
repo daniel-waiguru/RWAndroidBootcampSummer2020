@@ -6,11 +6,14 @@ import retrofit2.http.Query
 import tech.danielwaiguru.estudy.BuildConfig
 import tech.danielwaiguru.estudy.networking.response.BooksResponse
 
-const val API_KEY : String = BuildConfig.key
-interface BooksApiService {
 
-    @GET("/android?q=android")
-    fun getBooks(@Query("api_key") api_key: String = API_KEY ): BooksResponse
+interface BooksApiService {
+    companion object{
+        const val API_KEY : String = BuildConfig.key
+    }
+
+    @GET("?q=android%20programming")
+    suspend fun getBooks(): BooksResponse
 
     @GET("/books/v1/volumes?langRestrict=en&maxResults=40&printType=books")
     fun searchBooks(@Query("q") search_term: String, @Query("api_key")

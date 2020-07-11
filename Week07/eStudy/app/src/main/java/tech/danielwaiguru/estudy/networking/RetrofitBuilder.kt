@@ -8,7 +8,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 
 
-const val BASE_URL = "https://www.googleapis.com/books/v1/volumes"
+const val BASE_URL = "https://www.googleapis.com/books/v1/volumes/"
 
 /**
  * HttpClient instance
