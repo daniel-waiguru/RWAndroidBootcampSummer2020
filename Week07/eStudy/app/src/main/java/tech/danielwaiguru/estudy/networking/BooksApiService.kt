@@ -12,7 +12,7 @@ interface BooksApiService {
         const val API_KEY : String = BuildConfig.key
     }
 
-    @GET("?q=android%20programming")
+    @GET("harry+potter")
     suspend fun getBooks(): BooksResponse
 
     @GET("/books/v1/volumes?langRestrict=en&maxResults=40&printType=books")

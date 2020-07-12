@@ -8,7 +8,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 
 
-const val BASE_URL = "https://www.googleapis.com/books/v1/volumes/"
+const val BASE_URL = "https://www.googleapis.com/books/v1/volumes?q="
 
 /**
  * HttpClient instance
@@ -24,8 +24,8 @@ fun retrofitBuilder(): Retrofit{
     val contentType = "application/json".toMediaType()
     return Retrofit.Builder()
         .client(okHttpClient())
-        .addConverterFactory(Json.asConverterFactory(contentType))
         .baseUrl(BASE_URL)
+        .addConverterFactory(Json.asConverterFactory(contentType))
         .build()
 }
 

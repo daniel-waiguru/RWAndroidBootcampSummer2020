@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
                 val result = remoteApi.getBooks()
                 if (result is Success){
                     onBooksListReceived(result.data)
+                    Log.d("BOOK", "${result.data}")
                 }
                 else{
                     onGetBooksFailed()
@@ -60,7 +61,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onGetBooksFailed() {
-        //Toast.makeText(this, "Failed to get books", Toast.LENGTH_LONG).show()
+
         Log.d(TAG, "Failed to get books")
     }
 
