@@ -8,6 +8,7 @@ import androidx.lifecycle.MutableLiveData
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import tech.danielwaiguru.estudy.database.MonsterDatabase
 import tech.danielwaiguru.estudy.models.Monster
 import tech.danielwaiguru.estudy.networking.NetworkStatusChecker
 import tech.danielwaiguru.estudy.networking.RemoteApi
@@ -19,7 +20,12 @@ class MonsterRepository(app: Application) {
     }
     private val remoteApi = RemoteApi()
     val monsters = MutableLiveData<List<Monster>>()
+    private val monsterDao = MonsterDatabase.getDatabaseInstance(app).monsterDao()
     init {
+        CoroutineScope(Dispatchers.IO).launch {
+            val data = monsterDao.getAllMonsters()
+            monsters.postValue(data)
+        }
         refreshData()
     }
     @WorkerThread
@@ -27,7 +33,7 @@ class MonsterRepository(app: Application) {
         networkStatusChecker.performIfConnectedToInternet {
             val result = remoteApi.getMonsters()
             if (result is Success){
-                monsters.postValue(result.data)
+                monsterDao.insertMonster(result.data)
             }
             else{
                 Log.d("REPO", "Error from the server")

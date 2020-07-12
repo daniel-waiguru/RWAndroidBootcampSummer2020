@@ -16,7 +16,7 @@ import tech.danielwaiguru.estudy.ui.login.LoginActivity
 import tech.danielwaiguru.estudy.utils.toast
 import tech.danielwaiguru.estudy.viewmodels.MonsterViewModel
 
-class MainActivity : AppCompatActivity(), MonsterAdapter.MonsterItemClicked {
+class MainActivity : AppCompatActivity(), MonsterAdapter.MonsterItemClickListener {
     private val monsterViewModel by lazy {
         ViewModelProvider(this).get(MonsterViewModel::class.java)
     }

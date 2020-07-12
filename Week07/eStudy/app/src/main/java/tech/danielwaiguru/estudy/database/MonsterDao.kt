@@ -11,5 +11,5 @@ interface MonsterDao {
     @Insert
     suspend fun insertMonster(monster: List<Monster>)
     @Query("SELECT * FROM monsters")
-    fun getAllMonsters(): LiveData<List<Monster>>
+    suspend fun getAllMonsters(): List<Monster>
 }

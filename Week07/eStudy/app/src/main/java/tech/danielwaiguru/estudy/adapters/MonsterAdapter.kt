@@ -11,7 +11,7 @@ import com.squareup.picasso.Picasso
 import tech.danielwaiguru.estudy.R
 import tech.danielwaiguru.estudy.models.Monster
 
-class MonsterAdapter(val listerner: MonsterItemClicked): RecyclerView.Adapter<MonsterAdapter.MonsterViewHolder>() {
+class MonsterAdapter(private val listener: MonsterItemClickListener): RecyclerView.Adapter<MonsterAdapter.MonsterViewHolder>() {
     private var monsters: List<Monster> = emptyList()
     inner class MonsterViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val monsterImage: ImageView = itemView.findViewById(R.id.monster_image)
@@ -47,14 +47,14 @@ class MonsterAdapter(val listerner: MonsterItemClicked): RecyclerView.Adapter<Mo
         holder.monsterCaption.text = monster.caption
         holder.rating.rating = monster.scariness.toFloat()
         holder.itemView.setOnClickListener {
-            listerner.onMonsterItemClicked(monster)
+            listener.onMonsterItemClicked(monster)
         }
     }
     internal fun setData(monsters: List<Monster>){
         this.monsters = monsters
         notifyDataSetChanged()
     }
-    interface MonsterItemClicked{
+    interface MonsterItemClickListener {
         fun onMonsterItemClicked(monster: Monster)
     }
 }
