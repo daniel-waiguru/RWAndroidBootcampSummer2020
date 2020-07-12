@@ -1,14 +1,13 @@
 package tech.danielwaiguru.estudy.networking
 
-import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
-import kotlinx.serialization.json.Json
-import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
+import retrofit2.converter.moshi.MoshiConverterFactory
 
 
-const val BASE_URL = "https://www.googleapis.com/books/v1/volumes?q="
+const val BASE_URL = "https://774906.youcanlearnit.net"
+const val IMAGES_URL = "$BASE_URL/images"
 
 /**
  * HttpClient instance
@@ -21,16 +20,11 @@ fun okHttpClient(): OkHttpClient =
         .build()
 
 fun retrofitBuilder(): Retrofit{
-    val contentType = "application/json".toMediaType()
     return Retrofit.Builder()
         .client(okHttpClient())
         .baseUrl(BASE_URL)
-        .addConverterFactory(Json.asConverterFactory(contentType))
+        .addConverterFactory(MoshiConverterFactory.create())
         .build()
 }
-
-object BooksApiServiceBuilder{
-    val booksApi: BooksApiService by lazy {
-        retrofitBuilder().create(BooksApiService::class.java)
-    }
-}
+fun buildServiceApi(): MonsterApiService =
+    retrofitBuilder().create(MonsterApiService::class.java)

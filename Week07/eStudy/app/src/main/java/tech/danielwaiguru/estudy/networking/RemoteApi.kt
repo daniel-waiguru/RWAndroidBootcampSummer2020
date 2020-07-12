@@ -1,12 +1,12 @@
 package tech.danielwaiguru.estudy.networking
 
-import tech.danielwaiguru.estudy.models.Book
+import tech.danielwaiguru.estudy.models.Monster
 
 class RemoteApi {
-    suspend fun getBooks(): Result<List<Book>> =
+    suspend fun getMonsters(): Result<List<Monster>> =
         try {
-            val data = BooksApiServiceBuilder.booksApi.getBooks()
-            Success(data.books)
+            val data = buildServiceApi().getMonsters().body()!!
+            Success(data)
         }
         catch (error: Throwable){
             Failure(error)

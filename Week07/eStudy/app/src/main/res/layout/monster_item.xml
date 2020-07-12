@@ -10,10 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
-            android:id="@+id/book_cover"
-            android:layout_width="60dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="8dp"
+            android:id="@+id/monster_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="@dimen/margin_end"
             android:layout_marginTop="@dimen/margin_top"
             android:layout_marginEnd="@dimen/margin_end"
             android:contentDescription="@string/book_cover_page"
@@ -21,53 +21,40 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/book_title"
+            android:id="@+id/monster_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="@dimen/margin_end"
             android:layout_marginTop="@dimen/margin_top"
             android:layout_marginEnd="@dimen/margin_end"
-
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/book_cover"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/monster_image" />
 
         <TextView
-            android:id="@+id/book_subtitle"
+            android:id="@+id/monster_caption"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="@dimen/margin_end"
             android:layout_marginTop="@dimen/margin_top"
             android:layout_marginEnd="@dimen/margin_end"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/book_cover"
-            app:layout_constraintTop_toBottomOf="@id/book_title" />
-
-        <TextView
-            android:id="@+id/book_publisher"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/monster_name" />
+        <RatingBar
+            android:id="@+id/rating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/book_subtitle"
-            app:layout_constraintTop_toBottomOf="@id/book_subtitle"
-            android:layout_marginEnd="@dimen/margin_end"
-            android:layout_marginTop="@dimen/margin_top"
-            />
-
-        <TextView
-            android:id="@+id/date_published"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_top"
-            android:layout_marginEnd="@dimen/margin_end"
-
+            android:isIndicator="true"
+            style="?android:ratingBarStyleSmall"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.922"
-            app:layout_constraintStart_toEndOf="@id/book_publisher"
-            app:layout_constraintTop_toBottomOf="@id/book_subtitle" />
+            app:layout_constraintTop_toBottomOf="@id/monster_caption"
+            android:layout_marginTop="4dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

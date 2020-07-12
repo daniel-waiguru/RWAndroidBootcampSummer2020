@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/books_rv"
+        android:id="@+id/monster_rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/book_item" />
+        tools:listitem="@layout/monster_item" />
 </androidx.constraintlayout.widget.ConstraintLayout>
