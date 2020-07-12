@@ -9,4 +9,6 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="book_cover_page">Book cover page</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
 </resources>
