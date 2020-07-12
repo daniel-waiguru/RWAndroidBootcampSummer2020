@@ -17,5 +17,7 @@ class MonsterViewModel(application: Application): AndroidViewModel(application) 
         monsterRepository = MonsterRepository(application)
     }
     val allMonsters = monsterRepository.monsters
-
+    fun refreshData() {
+        monsterRepository.refreshData()
+    }
 }

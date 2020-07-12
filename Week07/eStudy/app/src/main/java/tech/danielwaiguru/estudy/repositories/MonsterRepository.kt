@@ -20,9 +20,7 @@ class MonsterRepository(app: Application) {
     private val remoteApi = RemoteApi()
     val monsters = MutableLiveData<List<Monster>>()
     init {
-        CoroutineScope(Dispatchers.IO).launch {
-            getData()
-        }
+        refreshData()
     }
     @WorkerThread
     suspend fun getData(){
@@ -34,6 +32,12 @@ class MonsterRepository(app: Application) {
             else{
                 Log.d("REPO", "Error from the server")
             }
+        }
+    }
+
+    fun refreshData() {
+        CoroutineScope(Dispatchers.IO).launch {
+            getData()
         }
     }
 }

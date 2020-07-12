@@ -28,12 +28,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        
+        swipe_layout.setOnRefreshListener {
+            monsterViewModel.refreshData()
+        }
         monsterViewModel.allMonsters.observe(this, Observer { monstersList ->
             monstersList?.let {
                 monster_rv.layoutManager = GridLayoutManager(this, 2)
                 monster_rv.adapter = monsterAdapter
                 monsterAdapter.setData(it)
+                swipe_layout.isRefreshing = false
             }
         })
     }
