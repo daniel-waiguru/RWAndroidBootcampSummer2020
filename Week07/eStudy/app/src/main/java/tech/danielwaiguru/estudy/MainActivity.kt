@@ -10,11 +10,13 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import tech.danielwaiguru.estudy.adapters.MonsterAdapter
+import tech.danielwaiguru.estudy.models.Monster
 import tech.danielwaiguru.estudy.repositories.UserPrefsRepository
 import tech.danielwaiguru.estudy.ui.login.LoginActivity
+import tech.danielwaiguru.estudy.utils.toast
 import tech.danielwaiguru.estudy.viewmodels.MonsterViewModel
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), MonsterAdapter.MonsterItemClicked {
     private val monsterViewModel by lazy {
         ViewModelProvider(this).get(MonsterViewModel::class.java)
     }
@@ -22,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         UserPrefsRepository(applicationContext)
     }
     private val monsterAdapter by lazy {
-        MonsterAdapter()
+        MonsterAdapter(this)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -62,5 +64,9 @@ class MainActivity : AppCompatActivity() {
         userPrefsRepository.isUserLoggedIn(false)
         startActivity(Intent(this, LoginActivity::class.java))
         finish()
+    }
+
+    override fun onMonsterItemClicked(monster: Monster) {
+        toast("${monster.monsterName} selected")
     }
 }
