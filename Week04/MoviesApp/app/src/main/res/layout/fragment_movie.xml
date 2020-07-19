@@ -15,7 +15,7 @@
             android:id="@+id/movies_rv"
             android:layout_width="0dp"
             android:layout_height="0dp"
-
+            tools:listitem="@layout/movie_item_view_holder"
             android:clipToPadding="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

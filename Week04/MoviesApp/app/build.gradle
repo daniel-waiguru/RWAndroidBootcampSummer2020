@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: "androidx.navigation.safeargs.kotlin"
 apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlinx-serialization'
 
 android {
     compileSdkVersion 29
@@ -19,17 +20,25 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField 'String', 'key', API_KEY
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'key', API_KEY
         }
+    }
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
 dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    def nav_version = "2.3.0-rc01"
+    def nav_version = "2.3.0"
     def preference_version = "1.1.1"
     def room_version = "2.2.5"
     implementation fileTree(dir: "libs", include: ["*.jar"])
@@ -57,12 +66,17 @@ dependencies {
 
     implementation "androidx.preference:preference-ktx:$preference_version"
     implementation 'androidx.preference:preference:1.1.1'
-    //Gson Converter
-    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
 
     //Picasso
-    implementation 'com.squareup.picasso:picasso:2.5.2'
-    
-    implementation "com.github.bumptech.glide:glide:4.11.0"
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    //Kotlin serialization
+    implementation "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.4.0"
+    implementation "com.squareup.okhttp3:okhttp:4.7.2"
+    //logging interceptor
+    implementation "com.squareup.okhttp3:logging-interceptor:4.5.0"
+    //Moshi
+    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
 
 }

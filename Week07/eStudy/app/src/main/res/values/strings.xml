@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">eStudy</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="remember_me_and_keep_me_signed_in">"Remember me "</string>
+    <string name="login">Login</string>
+    <string name="new_user_sign_up">New User? SignUp</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="book_cover_page">Book cover page</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="monster_image">Monster Image</string>
+    <string name="scariness">Scariness</string>
+</resources>

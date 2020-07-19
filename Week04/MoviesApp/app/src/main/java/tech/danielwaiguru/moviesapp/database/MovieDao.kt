@@ -17,7 +17,7 @@ interface MovieDao {
      * retrieving all movies
      */
     @Query("SELECT * FROM movie")
-    fun getAllMovies(): LiveData<List<Movie>>
+    fun getAllMovies(): List<Movie>
     /**
      * Deleting all movies
      */
