@@ -5,5 +5,5 @@ import tech.danielwaiguru.moviesapp.database.Movie
 
 
 data class MovieResponse(
-    val movies : List<Movie> = mutableListOf()
+    val movies : List<Movie>
 )

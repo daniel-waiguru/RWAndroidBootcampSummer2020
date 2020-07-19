@@ -42,13 +42,15 @@ class MovieFragment : Fragment(), MovieAdapter.MovieItemListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        movieViewModel.allMovies.observe(viewLifecycleOwner, Observer { movieList ->
-            movieList?.let {
-                recyclerViewSetup()
-                movieAdapter.setMovies(it)
-                movies_rv.adapter = movieAdapter
-            }
-        })
+        activity?.let {
+            movieViewModel.allMovies.observe(it, Observer { movieList ->
+                movieList?.let {movies ->
+                    recyclerViewSetup()
+                    movies_rv.adapter = movieAdapter
+                    movieAdapter.setMovies(movies)
+                }
+            })
+        }
     }
 
     private fun recyclerViewSetup(){

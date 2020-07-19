@@ -28,16 +28,18 @@ class MovieRepository(app: Application) {
             allMovies.postValue(data)
         }
     }
+    
     @WorkerThread
     private suspend fun fetchData(){
         networkStatusChecker.performIfConnectedToInternet {
             val result = remoteApi.getPopularMovies()
             if (result is Success){
-                movieDao.insert(result.data)
+                movieDao.insertMovie(result.data)
             }
             else{
                 Log.d("API", "Server Error")
             }
+
         }
     }
 }
