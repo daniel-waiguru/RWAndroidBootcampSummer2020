@@ -33,6 +33,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
 }
 
 dependencies {
@@ -80,4 +83,5 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
     //WorkManager
     implementation "android.arch.work:work-runtime-ktx:1.0.1"
+    implementation "androidx.work:work-runtime-ktx:2.3.4"
 }

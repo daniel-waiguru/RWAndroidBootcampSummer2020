@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
 import tech.danielwaiguru.moviesapp.ui.login.LoginFragment
+import tech.danielwaiguru.moviesapp.ui.settings.SettingsActivity
 
 class MainActivity : AppCompatActivity() {
     private val userPrefRepository by lazy {
@@ -34,7 +35,10 @@ class MainActivity : AppCompatActivity() {
                 shareAction()
                 true
             }
-
+            R.id.action_settings -> {
+                initSettings()
+                true
+            }
             R.id.action_logout ->{
                 logout()
                 true
@@ -42,6 +46,9 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
 
+    }
+    fun initSettings(){
+        startActivity(Intent(this, SettingsActivity::class.java))
     }
 
     /**

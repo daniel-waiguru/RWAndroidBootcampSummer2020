@@ -12,7 +12,7 @@ import tech.danielwaiguru.moviesapp.models.Success
 class SyncMoviesWorker(context: Context, workerParameters: WorkerParameters):
     CoroutineWorker(context, workerParameters) {
     companion object{
-        const val WORK_NAME = "tech.danielwaiguru.moviesapp.worker.SyncMoviesWorker"
+        const val WORK_NAME = "SyncMoviesWorker"
     }
     private val remoteApi by lazy { MovieApp.remoteApi }
     private val movieDao by lazy {

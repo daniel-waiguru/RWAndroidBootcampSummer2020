@@ -37,7 +37,7 @@ class MovieApp: Application() {
             .setRequiredNetworkType(NetworkType.CONNECTED)
             .build()
         val syncMoviesWorker =
-            PeriodicWorkRequestBuilder<SyncMoviesWorker>(1, TimeUnit.HOURS)
+            PeriodicWorkRequestBuilder<SyncMoviesWorker>(20, TimeUnit.MINUTES)
                 .setConstraints(constraints)
                 .build()
         val workManager = WorkManager.getInstance(this)
