@@ -5,6 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.squareup.moshi.Json
 import kotlinx.android.parcel.Parcelize
+import tech.danielwaiguru.moviesapp.networking.IMAGE_URL
 
 
 @Parcelize
@@ -18,4 +19,7 @@ data class Movie(
     @field:Json(name = "vote_average") val vote_average: Double,
     @field:Json(name = "overview") val overview: String,
     @field:Json(name = "release_date")val release_date: String
-): Parcelable
+): Parcelable{
+    val poster : String
+    get() =  IMAGE_URL + poster_path
+}

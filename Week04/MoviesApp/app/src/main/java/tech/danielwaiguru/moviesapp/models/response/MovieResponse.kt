@@ -1,7 +1,6 @@
 package tech.danielwaiguru.moviesapp.models.response
 
 import com.squareup.moshi.Json
-import kotlinx.serialization.Serializable
 import tech.danielwaiguru.moviesapp.database.Movie
 
 

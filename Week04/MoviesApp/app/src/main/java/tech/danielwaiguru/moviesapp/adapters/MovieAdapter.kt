@@ -35,7 +35,7 @@ private var movieList = emptyList<Movie>()
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         val movie = movieList[position]
-        Picasso.get().load(movie.poster_path).into(holder.posterImage)
+        Picasso.get().load(movie.poster).into(holder.posterImage)
         holder.movieTitle.text = movie.title
         holder.ratingBar.rating = movie.vote_average.toFloat()
         holder.itemView.setOnClickListener {
