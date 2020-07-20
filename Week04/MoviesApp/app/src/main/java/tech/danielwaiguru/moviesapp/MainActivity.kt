@@ -7,6 +7,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
+import tech.danielwaiguru.moviesapp.ui.login.LoginFragment
 
 class MainActivity : AppCompatActivity() {
     private val userPrefRepository by lazy {
