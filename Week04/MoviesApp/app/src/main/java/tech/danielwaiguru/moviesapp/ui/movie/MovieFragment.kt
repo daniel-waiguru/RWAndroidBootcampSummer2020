@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -60,14 +59,14 @@ class MovieFragment : Fragment(), MovieAdapter.MovieItemListener {
             }
             Configuration.ORIENTATION_LANDSCAPE -> {
 
-                movies_rv.layoutManager = GridLayoutManager(context, 2, RecyclerView.HORIZONTAL, false)
+                movies_rv.layoutManager = GridLayoutManager(context, 3, RecyclerView.VERTICAL, false)
 
             }
 
         }
     }
-    private fun onMovieItemClicked(movie: Movie){
 
+    override fun onMovieItemClick(movie: Movie) {
         val bundle = Bundle()
         bundle.putParcelable("movie", movie)
         val detailsFragment = DetailsFragment()
@@ -76,9 +75,5 @@ class MovieFragment : Fragment(), MovieAdapter.MovieItemListener {
             .replace(R.id.nav_host_fragment, detailsFragment)
             .addToBackStack(null)
             .commit()
-    }
-
-    override fun onMovieItemClick(movie: Movie) {
-        Toast.makeText(requireContext(), "Movie ${movie.title} clicked", Toast.LENGTH_SHORT).show()
     }
 }

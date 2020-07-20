@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_details.*
 import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.database.Movie
@@ -25,10 +26,10 @@ class DetailsFragment : Fragment() {
         arguments?.let {
 
             val movie: Movie? = it.getParcelable("movie")
-
+            Picasso.get().load(movie?.poster).into(poster)
             movie_title.text = movie?.title
             release_date.text = movie?.release_date
-
+            movie_description.text = movie?.overview
         }
     }
 }

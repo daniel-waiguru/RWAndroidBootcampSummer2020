@@ -1,4 +1,4 @@
-package tech.danielwaiguru.moviesapp
+package tech.danielwaiguru.moviesapp.ui.main
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
 import tech.danielwaiguru.moviesapp.ui.login.LoginFragment
 
@@ -33,9 +34,7 @@ class MainActivity : AppCompatActivity() {
                 shareAction()
                 true
             }
-            R.id.action_settings ->{
-                true
-            }
+
             R.id.action_logout ->{
                 logout()
                 true
