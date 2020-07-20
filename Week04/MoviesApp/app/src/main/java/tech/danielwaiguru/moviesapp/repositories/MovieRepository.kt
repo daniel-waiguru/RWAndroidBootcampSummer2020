@@ -13,6 +13,7 @@ import tech.danielwaiguru.moviesapp.database.Movie
 import tech.danielwaiguru.moviesapp.database.MovieDatabase
 import tech.danielwaiguru.moviesapp.models.Success
 import tech.danielwaiguru.moviesapp.networking.NetworkStatusChecker
+import tech.danielwaiguru.moviesapp.networking.RemoteApi
 
 class MovieRepository(app: Application) {
     val allMovies = MutableLiveData<List<Movie>>()
@@ -28,7 +29,7 @@ class MovieRepository(app: Application) {
             allMovies.postValue(data)
         }
     }
-    
+
     @WorkerThread
     private suspend fun fetchData(){
         networkStatusChecker.performIfConnectedToInternet {
