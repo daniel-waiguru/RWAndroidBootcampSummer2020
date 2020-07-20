@@ -13,7 +13,7 @@ const val IMAGE_URL = "https://image.tmdb.org/t/p/w500"
 private fun buildClient(): OkHttpClient =
     OkHttpClient.Builder()
         .addInterceptor(HttpLoggingInterceptor().apply {
-            level = HttpLoggingInterceptor.Level.BODY
+            level = HttpLoggingInterceptor.Level.BASIC
         })
         .build()
 /**

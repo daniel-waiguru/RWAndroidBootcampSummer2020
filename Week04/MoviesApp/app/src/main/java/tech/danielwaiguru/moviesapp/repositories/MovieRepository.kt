@@ -30,7 +30,7 @@ class MovieRepository(app: Application) {
     }
 
     @WorkerThread
-    private suspend fun fetchData(){
+    suspend fun fetchData(){
         networkStatusChecker.performIfConnectedToInternet {
             val result = remoteApi.getPopularMovies()
             if (result is Success){
