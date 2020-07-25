@@ -5,11 +5,9 @@ import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.NetworkType
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 import tech.danielwaiguru.moviesapp.networking.RemoteApi
 import tech.danielwaiguru.moviesapp.networking.buildMovieApiService
+import tech.danielwaiguru.moviesapp.repositories.MovieRepository
 import tech.danielwaiguru.moviesapp.worker.SyncMoviesWorker
 import java.util.concurrent.TimeUnit
 
@@ -17,6 +15,7 @@ class MovieApp: Application() {
     companion object{
         private lateinit var instance: MovieApp
         private val moviesApiService by lazy { buildMovieApiService() }
+        val movieRepository: MovieRepository by lazy { MovieRepository(instance) }
         val remoteApi by lazy { RemoteApi(moviesApiService) }
     }
     override fun onCreate() {

@@ -12,19 +12,25 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_movie.*
+import tech.danielwaiguru.moviesapp.MovieApp
 import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.adapters.MovieAdapter
 import tech.danielwaiguru.moviesapp.database.Movie
 import tech.danielwaiguru.moviesapp.ui.details.DetailsFragment
 import tech.danielwaiguru.moviesapp.viewmodels.MovieViewModel
+import tech.danielwaiguru.moviesapp.viewmodels.MovieViewModelFactory
 
 
 class MovieFragment : Fragment(), MovieAdapter.MovieItemListener {
     private val movieAdapter by lazy {
         MovieAdapter(this)
     }
+    private val movieRepository by lazy { MovieApp.movieRepository }
+    private val viewModelFactory by lazy {
+        MovieViewModelFactory(movieRepository)
+    }
     private val movieViewModel by lazy {
-        ViewModelProvider(this).get(MovieViewModel::class.java)
+        ViewModelProvider(this, viewModelFactory).get(MovieViewModel::class.java)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
