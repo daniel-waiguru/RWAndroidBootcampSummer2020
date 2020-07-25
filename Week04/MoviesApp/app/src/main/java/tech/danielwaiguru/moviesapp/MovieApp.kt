@@ -14,7 +14,6 @@ import tech.danielwaiguru.moviesapp.worker.SyncMoviesWorker
 import java.util.concurrent.TimeUnit
 
 class MovieApp: Application() {
-    private val applicationScope = CoroutineScope(Dispatchers.Default)
     companion object{
         private lateinit var instance: MovieApp
         private val moviesApiService by lazy { buildMovieApiService() }
@@ -25,7 +24,8 @@ class MovieApp: Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
-        delayedInit()
+        //delayedInit()
+        setRecurringWork()
     }
 
     /**
@@ -47,12 +47,5 @@ class MovieApp: Application() {
             syncMoviesWorker
         )
     }
-    /**
-     * method to start a coroutine
-     */
-    private fun delayedInit(){
-        applicationScope.launch {
-            setRecurringWork()
-        }
-    }
+
 }
