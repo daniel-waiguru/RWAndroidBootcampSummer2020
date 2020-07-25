@@ -4,5 +4,6 @@
     <dimen name="margin_top">4dp</dimen>
     <dimen name="titleSize">22sp</dimen>
     <dimen name="margin">16dp</dimen>
-
+    <dimen name="textSize">18sp</dimen>
+    <dimen name="margin_details">10dp</dimen>
 </resources>

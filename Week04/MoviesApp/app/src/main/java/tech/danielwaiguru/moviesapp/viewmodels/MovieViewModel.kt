@@ -3,19 +3,16 @@ package tech.danielwaiguru.moviesapp.viewmodels
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import tech.danielwaiguru.moviesapp.database.Movie
 import tech.danielwaiguru.moviesapp.database.MovieDatabase
 import tech.danielwaiguru.moviesapp.repositories.MovieRepository
 
 class MovieViewModel(application: Application): AndroidViewModel(application) {
-    private val movieRepository: MovieRepository
-    val allMovies: LiveData<List<Movie>>
+    val allMovies: MutableLiveData<List<Movie>>
     init {
-        val movieDao = MovieDatabase.getDatabaseInstance(application, viewModelScope).movieDao()
-        movieRepository = MovieRepository(movieDao)
+        val movieRepository = MovieRepository(application)
         allMovies = movieRepository.allMovies
     }
-
-
 }

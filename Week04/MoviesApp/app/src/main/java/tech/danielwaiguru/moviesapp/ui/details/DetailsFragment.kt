@@ -25,10 +25,10 @@ class DetailsFragment : Fragment() {
         arguments?.let {
 
             val movie: Movie? = it.getParcelable("movie")
-            poster.setImageResource(movie!!.poster)
-            movie_title.text = movie.title
-            release_date.text = movie.release_date
-            movie_description.text = movie.summary
+
+            movie_title.text = movie?.title
+            release_date.text = movie?.release_date
+
         }
     }
 }

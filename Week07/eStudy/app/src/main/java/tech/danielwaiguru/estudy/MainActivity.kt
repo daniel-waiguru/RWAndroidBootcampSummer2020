@@ -12,6 +12,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 import tech.danielwaiguru.estudy.adapters.MonsterAdapter
 import tech.danielwaiguru.estudy.models.Monster
 import tech.danielwaiguru.estudy.repositories.UserPrefsRepository
+import tech.danielwaiguru.estudy.ui.details.MonsterDetailsActivity
+
 import tech.danielwaiguru.estudy.ui.login.LoginActivity
 import tech.danielwaiguru.estudy.utils.toast
 import tech.danielwaiguru.estudy.viewmodels.MonsterViewModel
@@ -68,5 +70,7 @@ class MainActivity : AppCompatActivity(), MonsterAdapter.MonsterItemClickListene
 
     override fun onMonsterItemClicked(monster: Monster) {
         toast("${monster.monsterName} selected")
+    }
+   
     }
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_title">24sp</dimen>
+    <dimen name="subtitle_text">18sp</dimen>
+    <dimen name="btn_text_size">15sp</dimen>
+    <dimen name="contact_text_size">17sp</dimen>
+    <dimen name="tipsSize">20sp</dimen>
+    <dimen name="margin28">28dp</dimen>
+    <dimen name="width192">192dp</dimen>
+    <dimen name="height33">33dp</dimen>
+    <dimen name="mt40">40dp</dimen>
+    <dimen name="width347">347dp</dimen>
+    <dimen name="marginTop80">80dp</dimen>
+    <dimen name="mb_140">140dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="height95">95dp</dimen>
+    <dimen name="margin36">36dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+    <dimen name="margin48">48dp</dimen>
+</resources>

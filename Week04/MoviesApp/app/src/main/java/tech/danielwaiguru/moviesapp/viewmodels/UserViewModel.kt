@@ -13,7 +13,7 @@ import tech.danielwaiguru.moviesapp.repositories.UserRepository
 class UserViewModel(application: Application): AndroidViewModel(application) {
     private val userRepository: UserRepository
     init {
-        val userDao = MovieDatabase.getDatabaseInstance(application, viewModelScope).userDao()
+        val userDao = MovieDatabase.getDatabaseInstance(application).userDao()
         userRepository = UserRepository(userDao)
     }
     fun registerUser(user: User) = viewModelScope.launch(Dispatchers.IO) {

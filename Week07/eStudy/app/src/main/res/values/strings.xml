@@ -11,4 +11,6 @@
     <string name="book_cover_page">Book cover page</string>
     <string name="about">About</string>
     <string name="logout">Logout</string>
+    <string name="monster_image">Monster Image</string>
+    <string name="scariness">Scariness</string>
 </resources>
