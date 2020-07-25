@@ -11,21 +11,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1425e714-26c1-4ba8-bda2-51128cf875d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModelTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="0406711971101603" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -44,6 +41,7 @@
         <option value="navigationResourceFile" />
         <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -67,10 +65,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/tech/danielwaiguru/moviesapp" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="tech.danielwaiguru.moviesapp.viewmodels" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\res\drawable" />
       <recent name="C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\res\drawable-v24" />
@@ -202,18 +208,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="388" y="99" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1595666137724" />
-    <state x="499" y="161" key="chooseDestDirectoryDialog" timestamp="1592647838568">
+    <state x="499" y="161" key="chooseDestDirectoryDialog" timestamp="1595694824732">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="499" y="161" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1592647838568" />
-    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1595672585464">
+    <state x="499" y="161" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1595694824732" />
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1595688184874">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1595672585464" />
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1595688184874" />
     <state x="322" y="96" key="git4idea.branch.GitSmartOperationDialog" timestamp="1595666061082">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="322" y="96" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.768@0.0.1366.768" timestamp="1595666061082" />
+    <state x="424" y="86" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1595694825091">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="424" y="86" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1595694825091" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1592566132215">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
