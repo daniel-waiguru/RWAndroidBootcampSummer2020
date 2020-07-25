@@ -45,12 +45,10 @@ class MainActivity : AppCompatActivity() {
             }
             else -> super.onOptionsItemSelected(item)
         }
-
     }
-    fun initSettings(){
+    private fun initSettings(){
         startActivity(Intent(this, SettingsActivity::class.java))
     }
-
     /**
      * function open sharing dialog
      */

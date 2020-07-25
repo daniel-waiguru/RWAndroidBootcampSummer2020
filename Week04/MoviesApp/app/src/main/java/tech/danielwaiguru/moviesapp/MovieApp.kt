@@ -19,15 +19,12 @@ class MovieApp: Application() {
         private val moviesApiService by lazy { buildMovieApiService() }
         val remoteApi by lazy { RemoteApi(moviesApiService) }
     }
-
-
     override fun onCreate() {
         super.onCreate()
         instance = this
         //delayedInit()
         setRecurringWork()
     }
-
     /**
      * Setting recurring work to refresh movies data every one hour
      */
