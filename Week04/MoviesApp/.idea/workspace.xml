@@ -11,7 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1425e714-26c1-4ba8-bda2-51128cf875d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModelTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/tech/danielwaiguru/moviesapp/database/MovieDatabaseTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
@@ -23,6 +23,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="0406711971101603" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -67,11 +68,12 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/tech/danielwaiguru/moviesapp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/androidTest/java/tech/danielwaiguru/moviesapp" />
+    <property name="last_opened_file_path" value="D:/AndroidStudioProjects/Notebook" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="tech.danielwaiguru.moviesapp.database" />
       <recent name="tech.danielwaiguru.moviesapp.viewmodels" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -82,7 +84,7 @@
       <recent name="C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\res\drawable-v24" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Android Instrumented Tests.MovieDatabaseTest">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -141,6 +143,108 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExampleInstrumentedT..." type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="tech.danielwaiguru.moviesapp.ExampleInstrumentedTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieDatabaseTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="tech.danielwaiguru.moviesapp.database.MovieDatabaseTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android Instrumented Tests.MovieDatabaseTest" />
+        <item itemvalue="Android Instrumented Tests.ExampleInstrumentedT..." />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -168,26 +272,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="542" y="214" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1592654185353" />
-    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1592730324179">
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1595756118351">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1592730324179" />
-    <state width="1323" height="310" key="GridCell.Tab.0.bottom" timestamp="1595673495466">
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1595756118351" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1595763097103">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="310" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595673495466" />
-    <state width="1323" height="310" key="GridCell.Tab.0.center" timestamp="1595673495465">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595763097103" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1595763097102">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="310" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595673495465" />
-    <state width="1323" height="310" key="GridCell.Tab.0.left" timestamp="1595673495464">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595763097102" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1595763097102">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="310" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595673495464" />
-    <state width="1323" height="310" key="GridCell.Tab.0.right" timestamp="1595673495466">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595763097102" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1595763097102">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="310" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595673495466" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595763097102" />
     <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1592677538498">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -208,10 +312,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="388" y="99" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1595666137724" />
-    <state x="499" y="161" key="chooseDestDirectoryDialog" timestamp="1595694824732">
+    <state x="499" y="161" key="chooseDestDirectoryDialog" timestamp="1595756723540">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="499" y="161" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1595694824732" />
+    <state x="499" y="161" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1595756723540" />
     <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1595688184874">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -220,14 +324,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="322" y="96" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.768@0.0.1366.768" timestamp="1595666061082" />
-    <state x="424" y="86" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1595694825091">
+    <state x="424" y="86" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1595756723832">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="424" y="86" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1595694825091" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1592566132215">
+    <state x="424" y="86" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1595756723832" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1595763083087">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1592566132215" />
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1595763083087" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1592566058823">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
