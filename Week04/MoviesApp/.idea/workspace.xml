@@ -6,24 +6,32 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="WORKER" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1425e714-26c1-4ba8-bda2-51128cf875d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/tech/danielwaiguru/moviesapp/database/MovieDatabaseTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/UserViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/tech/danielwaiguru/moviesapp/viewmodels/UserViewModelTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/database/MovieDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/database/MovieDatabase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/repositories/MovieRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/repositories/MovieRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/repositories/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/repositories/UserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/login/LoginFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/login/LoginFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/register/RegisterFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/register/RegisterFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/UserViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/UserViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/worker/SyncMoviesWorker.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/worker/SyncMoviesWorker.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModelTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModelTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="0406711971101603" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -68,13 +76,13 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/androidTest/java/tech/danielwaiguru/moviesapp" />
-    <property name="last_opened_file_path" value="D:/AndroidStudioProjects/Notebook" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/tech/danielwaiguru/moviesapp/viewmodels" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="tech.danielwaiguru.moviesapp.database" />
       <recent name="tech.danielwaiguru.moviesapp.viewmodels" />
+      <recent name="tech.danielwaiguru.moviesapp.database" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -84,9 +92,71 @@
       <recent name="C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\res\drawable-v24" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Instrumented Tests.MovieDatabaseTest">
-    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+  <component name="RunManager" selected="Android JUnit.UserViewModelTest">
+    <configuration name="ExampleUnitTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.danielwaiguru.moviesapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.danielwaiguru.moviesapp" />
+      <option name="MAIN_CLASS_NAME" value="tech.danielwaiguru.moviesapp.ExampleUnitTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExampleUnitTest.addition_isCorrect" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.danielwaiguru.moviesapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.danielwaiguru.moviesapp" />
+      <option name="MAIN_CLASS_NAME" value="tech.danielwaiguru.moviesapp.ExampleUnitTest" />
+      <option name="METHOD_NAME" value="addition_isCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserViewModelTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.danielwaiguru.moviesapp.viewmodels.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.danielwaiguru.moviesapp.viewmodels" />
+      <option name="MAIN_CLASS_NAME" value="tech.danielwaiguru.moviesapp.viewmodels.UserViewModelTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
@@ -241,6 +311,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.UserViewModelTest" />
+        <item itemvalue="Android JUnit.ExampleUnitTest" />
+        <item itemvalue="Android JUnit.ExampleUnitTest.addition_isCorrect" />
         <item itemvalue="Android Instrumented Tests.MovieDatabaseTest" />
         <item itemvalue="Android Instrumented Tests.ExampleInstrumentedT..." />
       </list>
@@ -260,10 +333,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1595673767627">
+    <state x="280" y="15" key="#&lt;template&gt;_of_Android_JUnit" timestamp="1595796454184">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1595673767627" />
+    <state x="280" y="15" key="#&lt;template&gt;_of_Android_JUnit/0.0.1366.768@0.0.1366.768" timestamp="1595796454184" />
+    <state x="280" y="54" key="#ExampleUnitTest" timestamp="1595796634993">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="280" y="54" key="#ExampleUnitTest/0.0.1366.768@0.0.1366.768" timestamp="1595796634993" />
+    <state x="280" y="54" key="#UserViewModelTest" timestamp="1595796676093">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="280" y="54" key="#UserViewModelTest/0.0.1366.768@0.0.1366.768" timestamp="1595796676093" />
+    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1595789762534">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1595789762534" />
     <state x="263" y="138" key="AndroidCreateResourceFileDialog" timestamp="1592636401300">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -276,22 +361,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1595756118351" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1595763097103">
+    <state width="1306" height="372" key="GridCell.Tab.0.bottom" timestamp="1595833132137">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595763097103" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1595763097102">
+    <state width="1306" height="372" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595833132137" />
+    <state width="1306" height="372" key="GridCell.Tab.0.center" timestamp="1595833132136">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595763097102" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1595763097102">
+    <state width="1306" height="372" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595833132136" />
+    <state width="1306" height="372" key="GridCell.Tab.0.left" timestamp="1595833132136">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595763097102" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1595763097102">
+    <state width="1306" height="372" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595833132136" />
+    <state width="1306" height="372" key="GridCell.Tab.0.right" timestamp="1595833132136">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595763097102" />
+    <state width="1306" height="372" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595833132136" />
     <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1592677538498">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -312,10 +397,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="388" y="99" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1595666137724" />
-    <state x="499" y="161" key="chooseDestDirectoryDialog" timestamp="1595756723540">
+    <state x="499" y="161" key="chooseDestDirectoryDialog" timestamp="1595791868906">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="499" y="161" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1595756723540" />
+    <state x="499" y="161" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1595791868906" />
     <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1595688184874">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -324,10 +409,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="322" y="96" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.768@0.0.1366.768" timestamp="1595666061082" />
-    <state x="424" y="86" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1595756723832">
+    <state x="424" y="86" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1595791868920">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="424" y="86" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1595756723832" />
+    <state x="424" y="86" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1595791868920" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1595763083087">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

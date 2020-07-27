@@ -13,10 +13,7 @@ class UserRepository(private val userDao: UserDao) {
     fun loginUser(username: String, password: String): Boolean{
         val user: User? = userDao.loginUser(username)
         val pass = user?.password.toString()
-        return when (password) {
-            pass -> true
-            else -> false
-        }
+        return password == pass
     }
 
 }

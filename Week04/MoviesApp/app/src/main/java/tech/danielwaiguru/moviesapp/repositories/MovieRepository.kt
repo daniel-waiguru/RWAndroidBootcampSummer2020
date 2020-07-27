@@ -20,7 +20,7 @@ class MovieRepository(app: Application) {
         NetworkStatusChecker(app.getSystemService(ConnectivityManager::class.java)!!)
     }
     private val remoteApi by lazy { MovieApp.remoteApi }
-    private val movieDao = MovieDatabase.getDatabaseInstance(app).movieDao()
+    private val movieDao = MovieApp.movieDao
     init {
         CoroutineScope(Dispatchers.IO).launch {
             fetchData()

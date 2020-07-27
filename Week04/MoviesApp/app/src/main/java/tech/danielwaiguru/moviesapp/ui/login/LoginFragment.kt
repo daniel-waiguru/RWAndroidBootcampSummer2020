@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.fragment_login.*
+import tech.danielwaiguru.moviesapp.MovieApp
 import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
 import tech.danielwaiguru.moviesapp.ui.movie.MovieFragment
@@ -21,7 +22,9 @@ class LoginFragment : Fragment() {
     private val userPrefRepository by lazy {
         UserPrefRepository(requireActivity())
     }
-    private lateinit var userViewModel: UserViewModel
+    private val userViewModel by lazy {
+        ViewModelProvider(this, MovieApp.userViewModelFactory).get(UserViewModel::class.java)
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as AppCompatActivity).supportActionBar?.hide()
@@ -39,9 +42,9 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        activity?.let {
+        /*activity?.let {
             userViewModel = ViewModelProvider(it).get(UserViewModel::class.java)
-        }
+        }*/
         /**
          * login button on click listener
          */

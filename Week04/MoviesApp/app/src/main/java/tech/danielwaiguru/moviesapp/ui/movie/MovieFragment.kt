@@ -48,7 +48,7 @@ class MovieFragment : Fragment(), MovieAdapter.MovieItemListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         activity?.let {
-            movieViewModel.allMovies.observe(it, Observer { movieList ->
+            movieViewModel.getAllMovies().observe(it, Observer { movieList ->
                 movieList?.let {movies ->
                     recyclerViewSetup()
                     movies_rv.adapter = movieAdapter

@@ -16,7 +16,8 @@ class SyncMoviesWorker(context: Context, workerParameters: WorkerParameters):
     }
     private val remoteApi by lazy { MovieApp.remoteApi }
     private val movieDao by lazy {
-        MovieDatabase.getDatabaseInstance(applicationContext).movieDao()
+        //MovieDatabase.getDatabaseInstance(applicationContext).movieDao()
+        MovieApp.movieDao
     }
     override suspend fun doWork(): Result {
         try {

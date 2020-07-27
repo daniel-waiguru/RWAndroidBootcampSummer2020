@@ -6,6 +6,6 @@ import tech.danielwaiguru.moviesapp.database.Movie
 import tech.danielwaiguru.moviesapp.repositories.MovieRepository
 
 class MovieViewModel(private val movieRepository: MovieRepository): ViewModel() {
-    val allMovies: MutableLiveData<List<Movie>> = movieRepository.allMovies
-
+    private val allMovies: MutableLiveData<List<Movie>> = movieRepository.allMovies
+    fun getAllMovies() = allMovies
 }
