@@ -4,14 +4,11 @@ import android.content.Context
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import org.junit.After
-import org.junit.Assert.*
-import org.junit.Before
-import org.junit.Rule
-import org.junit.Test
-import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import kotlinx.coroutines.runBlocking
-import org.junit.rules.TestRule
+import org.junit.After
+import org.junit.Assert.assertEquals
+import org.junit.Before
+import org.junit.Test
 import org.junit.runner.RunWith
 import java.io.IOException
 
@@ -37,7 +34,7 @@ class MovieDatabaseTest {
     @Test
     @Throws(Exception::class)
     fun writeAndReadMovieDatabase() = runBlocking {
-        val preRetrieve = movieDao.getAllMovies()
+        val preRetrieve = movieDao.getAllMovies().value!!
         val movies = listOf(
             Movie(id = 1, poster_path = "https://pmcdeadline2.files.wordpress.com/2018/01/silicon-valley.jpg?w=1024", original_language = "en", title = "Test Movie",
                 vote_average = 3.5, release_date = "2020-07-26", overview = "This is a test Movie"),
@@ -45,7 +42,7 @@ class MovieDatabaseTest {
                 vote_average = 3.0 , release_date = "2020-07-26", overview = "This is a test Movie 2")
         )
         movieDao.insertMovie(movies)
-        val postRetrieve = movieDao.getAllMovies()
+        val postRetrieve = movieDao.getAllMovies().value!!
         val difference = postRetrieve.minus(preRetrieve)
         assertEquals(movies, difference)
     }

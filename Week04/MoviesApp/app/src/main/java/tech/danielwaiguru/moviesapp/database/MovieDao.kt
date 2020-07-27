@@ -1,5 +1,6 @@
 package tech.danielwaiguru.moviesapp.database
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
@@ -16,7 +17,7 @@ interface MovieDao {
      * retrieving all movies
      */
     @Query("SELECT * FROM movie")
-    suspend fun getAllMovies(): List<Movie>
+     fun getAllMovies(): LiveData<List<Movie>>
     /**
      * Deleting all movies
      */

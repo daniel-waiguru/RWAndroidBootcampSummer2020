@@ -56,6 +56,7 @@ class MovieFragment : Fragment(), MovieAdapter.MovieItemListener {
                 }
             })
         }
+        movieViewModel.fetchMovies()
     }
 
     private fun recyclerViewSetup(){

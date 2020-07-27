@@ -22,7 +22,7 @@ class MovieApp: Application() {
             Room.databaseBuilder(instance, MovieDatabase::class.java, "movies").build()
         }
         private val moviesApiService by lazy { buildMovieApiService() }
-        val movieRepository: MovieRepository by lazy { MovieRepository(instance) }
+        val movieRepository: MovieRepository by lazy { MovieRepository(movieDao, remoteApi) }
         val remoteApi by lazy { RemoteApi(moviesApiService) }
         val movieDao by lazy { movieDatabase.movieDao() }
         private val userDao by lazy { movieDatabase.userDao() }

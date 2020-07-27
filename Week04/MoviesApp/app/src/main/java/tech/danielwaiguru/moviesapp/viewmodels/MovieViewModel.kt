@@ -1,11 +1,16 @@
 package tech.danielwaiguru.moviesapp.viewmodels
 
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import tech.danielwaiguru.moviesapp.database.Movie
+import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.launch
 import tech.danielwaiguru.moviesapp.repositories.MovieRepository
 
 class MovieViewModel(private val movieRepository: MovieRepository): ViewModel() {
-    private val allMovies: MutableLiveData<List<Movie>> = movieRepository.allMovies
-    fun getAllMovies() = allMovies
+
+    private val movies = movieRepository.movies
+    fun getAllMovies() = movies
+
+    fun fetchMovies() = viewModelScope.launch {
+        movieRepository.fetchMovies()
+    }
 }

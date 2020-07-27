@@ -1,45 +1,23 @@
 package tech.danielwaiguru.moviesapp.repositories
 
-import android.app.Application
-import android.net.ConnectivityManager
 import android.util.Log
-import androidx.annotation.WorkerThread
-import androidx.lifecycle.MutableLiveData
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import tech.danielwaiguru.moviesapp.MovieApp
 import tech.danielwaiguru.moviesapp.database.Movie
-import tech.danielwaiguru.moviesapp.database.MovieDatabase
+import tech.danielwaiguru.moviesapp.database.MovieDao
 import tech.danielwaiguru.moviesapp.models.Success
-import tech.danielwaiguru.moviesapp.networking.NetworkStatusChecker
+import tech.danielwaiguru.moviesapp.networking.RemoteApi
 
-class MovieRepository(app: Application) {
-    val allMovies = MutableLiveData<List<Movie>>()
-    private val networkStatusChecker by lazy {
-        NetworkStatusChecker(app.getSystemService(ConnectivityManager::class.java)!!)
-    }
-    private val remoteApi by lazy { MovieApp.remoteApi }
-    private val movieDao = MovieApp.movieDao
-    init {
-        CoroutineScope(Dispatchers.IO).launch {
-            fetchData()
-            val data = movieDao.getAllMovies()
-            allMovies.postValue(data)
+open class MovieRepository(private val moviesDao: MovieDao, private val remoteApi: RemoteApi) {
+    val movies = moviesDao.getAllMovies()
+    suspend fun fetchMovies(){
+        val result = remoteApi.getPopularMovies()
+        if (result is Success){
+            storeMovies(result.data)
+        }
+        else{
+            Log.d("API", "Server Error")
         }
     }
-
-    @WorkerThread
-    suspend fun fetchData(){
-        networkStatusChecker.performIfConnectedToInternet {
-            val result = remoteApi.getPopularMovies()
-            if (result is Success){
-                movieDao.insertMovie(result.data)
-            }
-            else{
-                Log.d("API", "Server Error")
-            }
-
-        }
+    private suspend fun storeMovies(movies: List<Movie>){
+        moviesDao.insertMovie(movies)
     }
 }
