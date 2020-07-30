@@ -10,26 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1425e714-26c1-4ba8-bda2-51128cf875d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/LazyLoadingListener.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/fragment_menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/searchable.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/MovieAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/MovieAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/networking/MoviesApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/networking/MoviesApiService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/networking/RemoteApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/networking/RemoteApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/repositories/MovieRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/repositories/MovieRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/main/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/worker/SyncMoviesWorker.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/worker/SyncMoviesWorker.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu-v26/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu-v26/main_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +48,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../.." value="week8-Background-Processing" />
+        <entry key="$PROJECT_DIR$/../.." value="week9-MVVM-And-Unit-Testing" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -358,6 +343,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596013926878" />
+    <state width="427" height="654" key="Git.Branch.Popup" timestamp="1596148717533">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="427" height="654" key="Git.Branch.Popup/0.0.1366.768@0.0.1366.768" timestamp="1596148717532" />
     <state width="1323" height="342" key="GridCell.Tab.0.bottom" timestamp="1596013611546">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
