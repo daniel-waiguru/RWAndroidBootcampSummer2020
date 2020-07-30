@@ -23,16 +23,7 @@
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" >
         <argument
-            android:name="title"
-            app:argType="string" />
-        <argument
-            android:name="date"
-            app:argType="string" />
-        <argument
-            android:name="desc"
-            app:argType="string" />
-        <argument
-            android:name="poster"
+            android:name="movieId"
             app:argType="integer" />
     </fragment>
     <fragment

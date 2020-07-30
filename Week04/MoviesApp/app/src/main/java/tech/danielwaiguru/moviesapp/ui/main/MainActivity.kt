@@ -1,4 +1,4 @@
-package tech.danielwaiguru.moviesapp
+package tech.danielwaiguru.moviesapp.ui.main
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,10 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
 import tech.danielwaiguru.moviesapp.ui.login.LoginFragment
+import tech.danielwaiguru.moviesapp.ui.settings.SettingsActivity
 
 class MainActivity : AppCompatActivity() {
     private val userPrefRepository by lazy {
@@ -33,7 +35,8 @@ class MainActivity : AppCompatActivity() {
                 shareAction()
                 true
             }
-            R.id.action_settings ->{
+            R.id.action_settings -> {
+                initSettings()
                 true
             }
             R.id.action_logout ->{
@@ -42,9 +45,10 @@ class MainActivity : AppCompatActivity() {
             }
             else -> super.onOptionsItemSelected(item)
         }
-
     }
-
+    private fun initSettings(){
+        startActivity(Intent(this, SettingsActivity::class.java))
+    }
     /**
      * function open sharing dialog
      */
