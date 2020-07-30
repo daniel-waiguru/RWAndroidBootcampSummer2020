@@ -3,18 +3,20 @@ package tech.danielwaiguru.moviesapp.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.RatingBar
-import android.widget.TextView
+import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.database.Movie
+import java.util.*
+import kotlin.collections.ArrayList
 
 
-class MovieAdapter(private val listener: MovieItemListener) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
+class MovieAdapter(private val listener: MovieItemListener):
+    RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(), Filterable{
 
 private var movieList = emptyList<Movie>()
+   var movieFilterList = emptyList<Movie>()
     inner class MovieViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val posterImage: ImageView = itemView.findViewById(R.id.posterImageView)
         val movieTitle: TextView = itemView.findViewById(R.id.movie_title)
@@ -31,7 +33,7 @@ private var movieList = emptyList<Movie>()
         )
     }
 
-    override fun getItemCount(): Int = movieList.size
+    override fun getItemCount(): Int = movieFilterList.size
 
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
         val movie = movieList[position]
@@ -44,9 +46,39 @@ private var movieList = emptyList<Movie>()
     }
     internal fun setMovies(movies: List<Movie>){
         this.movieList = movies
+        //this.movieFilterList = movies
         notifyDataSetChanged()
     }
     interface MovieItemListener{
         fun onMovieItemClick(movie: Movie)
     }
+
+    override fun getFilter(): Filter {
+        return object : Filter(){
+            override fun performFiltering(charSequence: CharSequence?): FilterResults {
+                val searchTerm = charSequence.toString()
+                movieFilterList = if (searchTerm.isEmpty()){
+                    movieList
+                } else{
+                    val resultList = ArrayList<Movie>()
+                    for (movie in movieList){
+                        if (movie.title.toLowerCase(Locale.ROOT).contains(searchTerm.toLowerCase(Locale.ROOT))){
+                            resultList.add(movie)
+                        }
+                    }
+                    resultList
+                }
+                val filterResults = FilterResults()
+                filterResults.values = movieFilterList
+                return filterResults
+            }
+
+            override fun publishResults(charSequence: CharSequence?, filterResults: FilterResults?) {
+                movieFilterList = filterResults?.values as ArrayList<Movie>
+                notifyDataSetChanged()
+            }
+
+        }
+    }
+
 }

@@ -21,11 +21,10 @@
         app:showAsAction="never"
         android:contentDescription="@string/logout_option"
         />
-    <item android:id="@+id/action_search"
+    <item android:id="@+id/app_bar_search"
+        android:title="@string/search"
+        app:showAsAction="always|collapseActionView"
         android:icon="@drawable/ic_search"
-        app:showAsAction="ifRoom"
-        android:iconTint="@color/nonActiveItems"
-        android:contentDescription="@string/search_your_favorite_movie"
-        android:title="@string/search_title" />
+        app:actionViewClass="android.widget.SearchView"/>
 
 </menu>

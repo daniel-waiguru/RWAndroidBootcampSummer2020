@@ -16,7 +16,6 @@ class SyncMoviesWorker(context: Context, workerParameters: WorkerParameters):
     }
     private val remoteApi by lazy { MovieApp.remoteApi }
     private val movieDao by lazy {
-        //MovieDatabase.getDatabaseInstance(applicationContext).movieDao()
         MovieApp.movieDao
     }
     override suspend fun doWork(): Result {
@@ -29,7 +28,7 @@ class SyncMoviesWorker(context: Context, workerParameters: WorkerParameters):
         return Result.success()
     }
     private suspend fun refreshData(){
-        val result = remoteApi.getPopularMovies()
+        val result = remoteApi.getPopularMovies(1)
         if (result is Success){
             Log.d("WORKER", "Refreshing the data")
             movieDao.insertMovie(result.data)

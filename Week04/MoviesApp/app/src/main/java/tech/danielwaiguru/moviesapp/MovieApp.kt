@@ -32,7 +32,7 @@ class MovieApp: Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
-        //delayedInit()
+
         setRecurringWork()
     }
     /**

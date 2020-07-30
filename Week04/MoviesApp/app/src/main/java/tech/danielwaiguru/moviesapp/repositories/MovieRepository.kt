@@ -8,8 +8,8 @@ import tech.danielwaiguru.moviesapp.networking.RemoteApi
 
 open class MovieRepository(private val moviesDao: MovieDao, private val remoteApi: RemoteApi) {
     val movies = moviesDao.getAllMovies()
-    suspend fun fetchMovies(){
-        val result = remoteApi.getPopularMovies()
+    suspend fun fetchMovies(page: Int){
+        val result = remoteApi.getPopularMovies(page = page)
         if (result is Success){
             storeMovies(result.data)
         }
@@ -19,5 +19,11 @@ open class MovieRepository(private val moviesDao: MovieDao, private val remoteAp
     }
     private suspend fun storeMovies(movies: List<Movie>){
         moviesDao.insertMovie(movies)
+    }
+    suspend fun searchMovie(searchTerm: String){
+        val result = remoteApi.searchMovie(searchTerm = searchTerm)
+        if (result is Success){
+
+        }
     }
 }

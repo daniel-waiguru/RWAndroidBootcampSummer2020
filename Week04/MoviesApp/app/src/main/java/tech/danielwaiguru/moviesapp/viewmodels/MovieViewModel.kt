@@ -6,11 +6,12 @@ import kotlinx.coroutines.launch
 import tech.danielwaiguru.moviesapp.repositories.MovieRepository
 
 class MovieViewModel(private val movieRepository: MovieRepository): ViewModel() {
-
+    var page = 1
     private val movies = movieRepository.movies
     fun getAllMovies() = movies
 
     fun fetchMovies() = viewModelScope.launch {
-        movieRepository.fetchMovies()
+        movieRepository.fetchMovies(page = page)
+        page++
     }
 }
