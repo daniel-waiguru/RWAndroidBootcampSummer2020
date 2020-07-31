@@ -6,7 +6,12 @@ import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.NetworkType
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
+import org.koin.android.ext.koin.androidContext
+import org.koin.android.logger.AndroidLogger
+import org.koin.core.context.startKoin
 import tech.danielwaiguru.moviesapp.database.MovieDatabase
+import tech.danielwaiguru.moviesapp.di.coroutineModule
+import tech.danielwaiguru.moviesapp.di.networkMode
 import tech.danielwaiguru.moviesapp.networking.RemoteApi
 import tech.danielwaiguru.moviesapp.networking.buildMovieApiService
 import tech.danielwaiguru.moviesapp.repositories.MovieRepository
@@ -32,8 +37,8 @@ class MovieApp: Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
-
         setRecurringWork()
+        initKoin()
     }
     /**
      * Setting recurring work to refresh movies data every one hour
@@ -54,5 +59,12 @@ class MovieApp: Application() {
             syncMoviesWorker
         )
     }
-
+    //initialize koin
+    private fun initKoin(){
+        startKoin {
+            AndroidLogger()
+            androidContext(this@MovieApp)
+            modules(listOf(networkMode, coroutineModule))
+        }
+    }
 }

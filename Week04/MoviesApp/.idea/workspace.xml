@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1425e714-26c1-4ba8-bda2-51128cf875d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/di/CoroutineModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/di/NetworkModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/di/CoroutineModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/di/CoroutineModule.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
