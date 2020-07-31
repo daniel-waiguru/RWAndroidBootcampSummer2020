@@ -10,11 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1425e714-26c1-4ba8-bda2-51128cf875d2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/di/CoroutineModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/di/NetworkModule.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +38,9 @@
         <option value="navigationResourceFile" />
         <option value="layoutResourceFile" />
         <option value="JUnit4 Test Class" />
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
         <option value="resourceFile" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -339,10 +338,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="542" y="214" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1595940429859" />
-    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1596013926878">
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1596149391456">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596013926878" />
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596149391456" />
     <state width="427" height="654" key="Git.Branch.Popup" timestamp="1596148717533">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
