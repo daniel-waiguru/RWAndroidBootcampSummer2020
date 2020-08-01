@@ -4,7 +4,6 @@ import android.app.Application
 import androidx.room.Room
 import org.koin.android.ext.koin.androidApplication
 import org.koin.dsl.module
-import tech.danielwaiguru.moviesapp.database.MovieDao
 import tech.danielwaiguru.moviesapp.database.MovieDatabase
 
 val databaseModule = module {
@@ -13,8 +12,8 @@ val databaseModule = module {
             .fallbackToDestructiveMigration()
             .build()
     }
-    fun provideMovieDao(database: MovieDatabase):MovieDao =
-        database.movieDao()
+
     single { provideMovieDatabase(androidApplication()) }
-    single { provideMovieDao(get()) }
+    single { get<MovieDatabase>().movieDao() }
+    single { get<MovieDatabase>().userDao() }
 }

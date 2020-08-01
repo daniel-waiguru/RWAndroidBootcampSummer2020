@@ -8,9 +8,8 @@ import android.widget.CheckBox
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.fragment_login.*
-import tech.danielwaiguru.moviesapp.MovieApp
+import org.koin.android.viewmodel.ext.android.viewModel
 import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
 import tech.danielwaiguru.moviesapp.ui.movie.MovieFragment
@@ -22,9 +21,7 @@ class LoginFragment : Fragment() {
     private val userPrefRepository by lazy {
         UserPrefRepository(requireActivity())
     }
-    private val userViewModel by lazy {
-        ViewModelProvider(this, MovieApp.userViewModelFactory).get(UserViewModel::class.java)
-    }
+    private val userViewModel by viewModel<UserViewModel>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as AppCompatActivity).supportActionBar?.hide()

@@ -7,7 +7,6 @@ import androidx.room.Query
 import tech.danielwaiguru.moviesapp.models.User
 
 @Dao
-
 interface UserDao {
     @Insert(onConflict = OnConflictStrategy.ABORT)
     suspend fun registerUser(user: User)
