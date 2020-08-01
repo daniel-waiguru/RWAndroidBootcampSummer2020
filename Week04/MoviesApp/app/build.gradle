@@ -110,9 +110,7 @@ dependencies {
     // Koin for Android
     implementation "org.koin:koin-android:$koin_version"
     // or Koin for Lifecycle scoping
-    implementation "org.koin:koin-androidx-scope:$koin_version"
+    implementation "org.koin:koin-android-scope:$koin_version"
     // or Koin for Android Architecture ViewModel
-    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
-    // or Koin for Android Fragment Factory (unstable version)
-    implementation "org.koin:koin-androidx-fragment:$koin_version"
+    implementation "org.koin:koin-android-viewmodel:$koin_version"
 }
