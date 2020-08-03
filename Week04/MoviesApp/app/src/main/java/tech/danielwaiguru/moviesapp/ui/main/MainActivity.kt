@@ -4,18 +4,16 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.SearchView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import tech.danielwaiguru.moviesapp.R
-import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
-import tech.danielwaiguru.moviesapp.ui.login.LoginFragment
 import tech.danielwaiguru.moviesapp.ui.settings.SettingsActivity
 
 class MainActivity : AppCompatActivity() {
-    private val userPrefRepository by lazy {
+    /*private val userPrefRepository by lazy {
         UserPrefRepository(this)
-    }
+    }*/
+    //private val userPrefRepository: UserPrefRepository = scope.get()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -42,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             R.id.action_logout ->{
-                logout()
+                //logout()
                 true
             }
             else -> super.onOptionsItemSelected(item)
@@ -79,11 +77,11 @@ class MainActivity : AppCompatActivity() {
     /**
      * method to logout users
      */
-    private fun logout(){
+    /*private fun logout(){
         userPrefRepository.saveUser(false)
         val loginFragment = LoginFragment()
         supportFragmentManager.beginTransaction()
             .replace(R.id.nav_host_fragment, loginFragment)
             .commit()
-    }
+    }*/
 }

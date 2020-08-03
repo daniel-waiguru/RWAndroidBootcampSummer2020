@@ -8,10 +8,7 @@ import androidx.work.WorkManager
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.logger.AndroidLogger
 import org.koin.core.context.startKoin
-import tech.danielwaiguru.moviesapp.di.databaseModule
-import tech.danielwaiguru.moviesapp.di.networkMode
-import tech.danielwaiguru.moviesapp.di.repositoryModule
-import tech.danielwaiguru.moviesapp.di.viewModelModule
+import tech.danielwaiguru.moviesapp.di.*
 import tech.danielwaiguru.moviesapp.worker.SyncMoviesWorker
 import java.util.concurrent.TimeUnit
 
@@ -49,7 +46,7 @@ class MovieApp: Application() {
         startKoin {
             AndroidLogger()
             androidContext(this@MovieApp)
-            modules(listOf(networkMode, viewModelModule, repositoryModule, databaseModule))
+            modules(listOf(networkMode, viewModelModule, repositoryModule, databaseModule, prefsModule))
         }
     }
 }
