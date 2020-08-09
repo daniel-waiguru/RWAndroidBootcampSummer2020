@@ -76,6 +76,7 @@ class MovieFragment : Fragment(), MovieAdapter.MovieItemListener {
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.nav_host_fragment, detailsFragment)
             .addToBackStack(null)
+            .setCustomAnimations(R.anim.enter_from_left, R.anim.exit_to_right)
             .commit()
     }
 

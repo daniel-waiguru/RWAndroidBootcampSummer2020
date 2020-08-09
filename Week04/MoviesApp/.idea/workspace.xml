@@ -10,21 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1425e714-26c1-4ba8-bda2-51128cf875d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/di/PrefsModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/enter_from_left.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/exit_to_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/animator/slide_down.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/login/LoginFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/login/LoginFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/main/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="0406711971101603" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -49,8 +47,8 @@
         <option value="layoutResourceFile" />
         <option value="JUnit4 Test Class" />
         <option value="Kotlin Class" />
-        <option value="resourceFile" />
         <option value="Kotlin File" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -63,7 +61,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../.." value="week9-MVVM-And-Unit-Testing" />
+        <entry key="$PROJECT_DIR$/../.." value="week10-DI-With-Koin" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -95,7 +93,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/tech/danielwaiguru/moviesapp/viewmodels" />
-    <property name="last_opened_file_path" value="D:/AndroidStudioProjects/AndroidArchitectureComponents" />
+    <property name="last_opened_file_path" value="D:/android/iSellTransition/iSellTransition/iSellTransition-Final" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -362,38 +360,38 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1596008967678" />
-    <state x="263" y="138" key="AndroidCreateResourceFileDialog" timestamp="1595971628303">
+    <state x="263" y="138" key="AndroidCreateResourceFileDialog" timestamp="1596908679583">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="263" y="138" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1595971628303" />
+    <state x="263" y="138" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1596908679583" />
     <state x="756" y="212" key="AndroidCreateXmlResourceDialog" timestamp="1596395717362">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="756" y="212" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1596395717362" />
-    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1596396841042">
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1596907398548">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596396841042" />
-    <state width="427" height="654" key="Git.Branch.Popup" timestamp="1596148717533">
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596907398548" />
+    <state width="429" height="656" key="Git.Branch.Popup" timestamp="1596906782034">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="427" height="654" key="Git.Branch.Popup/0.0.1366.768@0.0.1366.768" timestamp="1596148717532" />
-    <state width="1323" height="310" key="GridCell.Tab.0.bottom" timestamp="1596395496593">
+    <state width="429" height="656" key="Git.Branch.Popup/0.0.1366.768@0.0.1366.768" timestamp="1596906782034" />
+    <state width="1323" height="310" key="GridCell.Tab.0.bottom" timestamp="1596909356397">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="310" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1596395496593" />
-    <state width="1323" height="310" key="GridCell.Tab.0.center" timestamp="1596395496593">
+    <state width="1323" height="310" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1596909356397" />
+    <state width="1323" height="310" key="GridCell.Tab.0.center" timestamp="1596909356397">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="310" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1596395496593" />
-    <state width="1323" height="310" key="GridCell.Tab.0.left" timestamp="1596395496592">
+    <state width="1323" height="310" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1596909356397" />
+    <state width="1323" height="310" key="GridCell.Tab.0.left" timestamp="1596909356395">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="310" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1596395496592" />
-    <state width="1323" height="310" key="GridCell.Tab.0.right" timestamp="1596395496593">
+    <state width="1323" height="310" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1596909356395" />
+    <state width="1323" height="310" key="GridCell.Tab.0.right" timestamp="1596909356397">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="310" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1596395496593" />
+    <state width="1323" height="310" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1596909356397" />
     <state width="1323" height="473" key="GridCell.Tab.1.bottom" timestamp="1595855164934">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -422,10 +420,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="499" y="161" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1595791868906" />
-    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1596278347021">
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1596906002515">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1596278347021" />
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1596906002515" />
     <state x="322" y="96" key="git4idea.branch.GitSmartOperationDialog" timestamp="1595666061082">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
