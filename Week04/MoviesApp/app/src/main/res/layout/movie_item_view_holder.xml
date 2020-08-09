@@ -20,18 +20,20 @@
             android:id="@+id/posterImageView"
             android:layout_width="match_parent"
             android:layout_height="250dp"
+            android:transitionName="tPoster"
             android:contentDescription="@string/movie_poster"
             android:scaleType="fitXY"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/crossings" />
+             />
         <TextView
             android:id="@+id/movie_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:textStyle="bold"
+            android:transitionName="tName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/posterImageView"

@@ -54,4 +54,7 @@
     <string name="error_text">Username and password are required!!</string>
     <string name="password_error">Password should contain at least 6 characters</string>
     <string name="username_error">Username should contain at least 5 characters</string>
+    <string name="transition_image">tPoster</string>
+    <string name="transition_movie_title">tName</string>
+    <string name="movie_extra">movie</string>
 </resources>

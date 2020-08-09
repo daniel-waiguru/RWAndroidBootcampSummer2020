@@ -1,10 +1,13 @@
 package tech.danielwaiguru.moviesapp.ui.movie
 
+import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.*
 import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityOptionsCompat
+import androidx.core.util.Pair
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
@@ -15,7 +18,7 @@ import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.adapters.LazyLoadingListener
 import tech.danielwaiguru.moviesapp.adapters.MovieAdapter
 import tech.danielwaiguru.moviesapp.database.Movie
-import tech.danielwaiguru.moviesapp.ui.details.DetailsFragment
+import tech.danielwaiguru.moviesapp.ui.details.DetailsActivity
 import tech.danielwaiguru.moviesapp.viewmodels.MovieViewModel
 
 
@@ -68,16 +71,17 @@ class MovieFragment : Fragment(), MovieAdapter.MovieItemListener {
         movieViewModel.getAllMovies()
     }
 
-    override fun onMovieItemClick(movie: Movie) {
-        val bundle = Bundle()
-        bundle.putParcelable("movie", movie)
-        val detailsFragment = DetailsFragment()
-        detailsFragment.arguments = bundle
-        requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.nav_host_fragment, detailsFragment)
-            .addToBackStack(null)
-            .setCustomAnimations(R.anim.enter_from_left, R.anim.exit_to_right)
-            .commit()
+    override fun onMovieItemClick(movie: Movie, itemView: View) {
+        val intent = Intent(requireContext(), DetailsActivity::class.java)
+        intent.putExtra(getString(R.string.movie_extra), movie)
+        val activityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(
+            requireActivity(),
+            Pair.create<View, String>(itemView.findViewById(R.id.posterImageView),
+                getString(R.string.transition_image)),
+            Pair.create<View, String>(itemView.findViewById(R.id.movie_title),
+                getString(R.string.transition_movie_title))
+        )
+        startActivity(intent, activityOptions.toBundle())
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
