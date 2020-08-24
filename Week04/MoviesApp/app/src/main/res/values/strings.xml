@@ -51,4 +51,7 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="search">Search movie</string>
+    <string name="error_text">Username and password are required!!</string>
+    <string name="password_error">Password should contain at least 6 characters</string>
+    <string name="username_error">Username should contain at least 5 characters</string>
 </resources>

@@ -216,6 +216,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1425e714-26c1-4ba8-bda2-51128cf875d2" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/di/PrefsModule.kt" afterDir="false" />
+||||||| 9cc5bf4
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/LazyLoadingListener.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/fragment_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/searchable.xml" afterDir="false" />
+=======
 <<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/LazyLoadingListener.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/fragment_menu.xml" afterDir="false" />
@@ -225,25 +232,22 @@
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_details.xml" afterDir="false" />
 =======
 >>>>>>> Stashed changes
+>>>>>>> master
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+||||||| 9cc5bf4
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+=======
 <<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+>>>>>>> master
       <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/MovieAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/MovieAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/networking/MoviesApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/networking/MoviesApiService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/networking/RemoteApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/networking/RemoteApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/repositories/MovieRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/repositories/MovieRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/login/LoginFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/login/LoginFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/main/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/worker/SyncMoviesWorker.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/worker/SyncMoviesWorker.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu-v26/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu-v26/main_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
 ||||||| constructed merge base
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
@@ -276,6 +280,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="0406711971101603" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -284,7 +289,12 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -294,35 +304,59 @@
         <option value="navigationResourceFile" />
         <option value="layoutResourceFile" />
         <option value="JUnit4 Test Class" />
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
         <option value="resourceFile" />
+        <option value="Kotlin File" />
       </list>
     </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\DanielWaiguru\Documents\key.jks" />
+    <option name="KEY_ALIAS" value="key0" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../.." value="week8-Background-Processing" />
+        <entry key="$PROJECT_DIR$/../.." value="week9-MVVM-And-Unit-Testing" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="KotlinCodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="ProjectId" id="1dWlo6AnTUuVN0xRh0uoiP3ebnV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ApkExportedModule" value="app" />
+    <property name="ExportApk.ApkPath" value="C:\Users\DanielWaiguru\Desktop\Github\RWAndroidBootcampSummer2020\Week04\MoviesApp\app" />
+    <property name="ExportApk.BuildVariants" value="debug" />
+    <property name="ExportApk.SignV1" value="true" />
+    <property name="ExportApk.SignV2" value="true" />
+    <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/tech/danielwaiguru/moviesapp/viewmodels" />
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="D:/AndroidStudioProjects/AndroidArchitectureComponents" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+||||||| 9cc5bf4
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
 <<<<<<< Updated upstream
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
 ||||||| constructed merge base
@@ -332,6 +366,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
 >>>>>>> Stashed changes
+>>>>>>> master
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -561,6 +596,9 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="280" y="15" key="#&lt;template&gt;_of_Android_JUnit" timestamp="1595796454184">
       <screen x="0" y="0" width="1366" height="768" />
@@ -598,17 +636,28 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="263" y="138" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1595971628303" />
-    <state x="542" y="214" key="AndroidCreateXmlResourceDialog" timestamp="1595940429859">
+    <state x="756" y="212" key="AndroidCreateXmlResourceDialog" timestamp="1596395717362">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="542" y="214" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1595940429859" />
-    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1596013926878">
+    <state x="756" y="212" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1596395717362" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1596396841042">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596013926878" />
-    <state width="1323" height="342" key="GridCell.Tab.0.bottom" timestamp="1596013611546">
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596396841042" />
+    <state width="427" height="654" key="Git.Branch.Popup" timestamp="1596148717533">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state width="427" height="654" key="Git.Branch.Popup/0.0.1366.768@0.0.1366.768" timestamp="1596148717532" />
+    <state width="1323" height="310" key="GridCell.Tab.0.bottom" timestamp="1596395496593">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+<<<<<<< HEAD
+    <state width="1323" height="310" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1596395496593" />
+    <state width="1323" height="310" key="GridCell.Tab.0.center" timestamp="1596395496593">
+||||||| 9cc5bf4
+    <state width="1323" height="342" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1596013611546" />
+    <state width="1323" height="342" key="GridCell.Tab.0.center" timestamp="1596013611545">
+=======
 <<<<<<< Updated upstream
     <state width="1323" height="342" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1596013611546" />
     <state width="1323" height="342" key="GridCell.Tab.0.center" timestamp="1596013611545">
@@ -619,8 +668,16 @@
     <state x="756" y="212" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1596979977270" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1596982626878">
 >>>>>>> Stashed changes
+>>>>>>> master
       <screen x="0" y="0" width="1366" height="768" />
     </state>
+<<<<<<< HEAD
+    <state width="1323" height="310" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1596395496593" />
+    <state width="1323" height="310" key="GridCell.Tab.0.left" timestamp="1596395496592">
+||||||| 9cc5bf4
+    <state width="1323" height="342" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1596013611545" />
+    <state width="1323" height="342" key="GridCell.Tab.0.left" timestamp="1596013611545">
+=======
 <<<<<<< Updated upstream
     <state width="1323" height="342" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1596013611545" />
     <state width="1323" height="342" key="GridCell.Tab.0.left" timestamp="1596013611545">
@@ -631,13 +688,14 @@
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596982626878" />
     <state width="429" height="656" key="Git.Branch.Popup" timestamp="1596906782034">
 >>>>>>> Stashed changes
+>>>>>>> master
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="342" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1596013611545" />
-    <state width="1323" height="342" key="GridCell.Tab.0.right" timestamp="1596013611546">
+    <state width="1323" height="310" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1596395496592" />
+    <state width="1323" height="310" key="GridCell.Tab.0.right" timestamp="1596395496593">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="342" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1596013611546" />
+    <state width="1323" height="310" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1596395496593" />
     <state width="1323" height="473" key="GridCell.Tab.1.bottom" timestamp="1595855164934">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -658,10 +716,19 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="388" y="99" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1595666137724" />
+    <state x="184" y="26" key="SettingsEditor" timestamp="1596271293146">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1596271293146" />
     <state x="499" y="161" key="chooseDestDirectoryDialog" timestamp="1595791868906">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="499" y="161" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1595791868906" />
+<<<<<<< HEAD
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1596278347021">
+||||||| 9cc5bf4
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1596008424168">
+=======
 <<<<<<< Updated upstream
     <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1596008424168">
 ||||||| constructed merge base
@@ -669,8 +736,14 @@
 =======
     <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1598275242103">
 >>>>>>> Stashed changes
+>>>>>>> master
       <screen x="0" y="0" width="1366" height="768" />
     </state>
+<<<<<<< HEAD
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1596278347021" />
+||||||| 9cc5bf4
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1596008424168" />
+=======
 <<<<<<< Updated upstream
     <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1596008424168" />
 ||||||| constructed merge base
@@ -678,6 +751,7 @@
 =======
     <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1598275242103" />
 >>>>>>> Stashed changes
+>>>>>>> master
     <state x="322" y="96" key="git4idea.branch.GitSmartOperationDialog" timestamp="1595666061082">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

@@ -1,12 +1,16 @@
 package tech.danielwaiguru.moviesapp.repositories
 
 import android.util.Log
+import org.koin.core.KoinComponent
+import org.koin.core.inject
 import tech.danielwaiguru.moviesapp.database.Movie
 import tech.danielwaiguru.moviesapp.database.MovieDao
 import tech.danielwaiguru.moviesapp.models.Success
 import tech.danielwaiguru.moviesapp.networking.RemoteApi
 
-open class MovieRepository(private val moviesDao: MovieDao, private val remoteApi: RemoteApi) {
+open class MovieRepository: KoinComponent {
+    private val moviesDao: MovieDao by inject()
+    private val remoteApi: RemoteApi by inject()
     val movies = moviesDao.getAllMovies()
     suspend fun fetchMovies(page: Int){
         val result = remoteApi.getPopularMovies(page = page)

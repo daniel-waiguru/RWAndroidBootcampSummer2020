@@ -1,9 +1,12 @@
 package tech.danielwaiguru.moviesapp.repositories
 
+import org.koin.core.KoinComponent
+import org.koin.core.inject
 import tech.danielwaiguru.moviesapp.database.UserDao
 import tech.danielwaiguru.moviesapp.models.User
 
-open class UserRepository(private val userDao: UserDao) {
+open class UserRepository: KoinComponent {
+    private val userDao: UserDao by inject()
     /**
      * Register user
      */
