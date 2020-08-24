@@ -3,7 +3,7 @@ package tech.danielwaiguru.moviesapp.repositories
 import tech.danielwaiguru.moviesapp.database.UserDao
 import tech.danielwaiguru.moviesapp.models.User
 
-class UserRepository(private val userDao: UserDao) {
+open class UserRepository(private val userDao: UserDao) {
     /**
      * Register user
      */
@@ -13,10 +13,7 @@ class UserRepository(private val userDao: UserDao) {
     fun loginUser(username: String, password: String): Boolean{
         val user: User? = userDao.loginUser(username)
         val pass = user?.password.toString()
-        return when (password) {
-            pass -> true
-            else -> false
-        }
+        return password == pass
     }
 
 }

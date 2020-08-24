@@ -5,10 +5,18 @@ import tech.danielwaiguru.moviesapp.models.Failure
 import tech.danielwaiguru.moviesapp.models.*
 
 class RemoteApi(private val moviesApiService: MoviesApiService) {
-    suspend fun getPopularMovies(): Result<List<Movie>> =
+    suspend fun getPopularMovies(page: Int): Result<List<Movie>> =
         try {
-            val response = moviesApiService.getAllMovies().movies
+            val response = moviesApiService.getAllMovies(page = page).movies
             Success(response)
+        }
+        catch (error: Throwable){
+            Failure(error)
+        }
+    suspend fun searchMovie(searchTerm: String): Result<List<Movie>> =
+        try {
+            val searchResponse = moviesApiService.searchMovie(searchTerm = searchTerm).movies
+            Success(searchResponse)
         }
         catch (error: Throwable){
             Failure(error)

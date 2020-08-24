@@ -212,19 +212,70 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="WORKER" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1425e714-26c1-4ba8-bda2-51128cf875d2" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/LazyLoadingListener.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/fragment_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/searchable.xml" afterDir="false" />
+||||||| constructed merge base
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/details/DetailsActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_details.xml" afterDir="false" />
+=======
+>>>>>>> Stashed changes
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/MovieAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/MovieAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/networking/MoviesApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/networking/MoviesApiService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/networking/RemoteApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/networking/RemoteApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/repositories/MovieRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/repositories/MovieRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/main/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/viewmodels/MovieViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/worker/SyncMoviesWorker.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/worker/SyncMoviesWorker.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu-v26/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu-v26/main_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+||||||| constructed merge base
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/MovieAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/MovieAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/details/DetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/details/DetailsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/enter_from_left.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/anim/enter_from_left.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/exit_to_right.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/anim/exit_to_right.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/alexrider.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/court.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/crossings.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/cursed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/dangergame.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/deskdawn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/goodbehavior.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/revenge.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/roswell.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/search.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/snow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/the.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/titan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/movie_item_view_holder.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/movie_item_view_holder.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+=======
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="0406711971101603" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -241,15 +292,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="navigationResourceFile" />
-        <option value="Kotlin Class" />
         <option value="layoutResourceFile" />
+        <option value="JUnit4 Test Class" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../.." value="master" />
+        <entry key="$PROJECT_DIR$/../.." value="week8-Background-Processing" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -266,18 +320,120 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/tech/danielwaiguru/moviesapp/viewmodels" />
+<<<<<<< Updated upstream
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+||||||| constructed merge base
+    <property name="last_opened_file_path" value="D:/android/iSellTransition/iSellTransition/iSellTransition-Final" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+>>>>>>> Stashed changes
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="tech.danielwaiguru.moviesapp.viewmodels" />
+      <recent name="tech.danielwaiguru.moviesapp.database" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\res\drawable" />
       <recent name="C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\res\drawable-v24" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+  <component name="RunManager" selected="Android Instrumented Tests.MovieDatabaseTest">
+    <configuration name="MovieViewModelTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <shortenClasspath name="MANIFEST" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.danielwaiguru.moviesapp.viewmodels.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.danielwaiguru.moviesapp.viewmodels" />
+      <option name="MAIN_CLASS_NAME" value="tech.danielwaiguru.moviesapp.viewmodels.MovieViewModelTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieViewModelTest.getMoviesFromDatabase" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <shortenClasspath name="MANIFEST" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.danielwaiguru.moviesapp.viewmodels.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.danielwaiguru.moviesapp.viewmodels" />
+      <option name="MAIN_CLASS_NAME" value="tech.danielwaiguru.moviesapp.viewmodels.MovieViewModelTest" />
+      <option name="METHOD_NAME" value="getMoviesFromDatabase" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieViewModelTest.moviesLiveData" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <shortenClasspath name="MANIFEST" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.danielwaiguru.moviesapp.viewmodels.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.danielwaiguru.moviesapp.viewmodels" />
+      <option name="MAIN_CLASS_NAME" value="tech.danielwaiguru.moviesapp.viewmodels.MovieViewModelTest" />
+      <option name="METHOD_NAME" value="moviesLiveData" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserViewModelTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.danielwaiguru.moviesapp.viewmodels.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.danielwaiguru.moviesapp.viewmodels" />
+      <option name="MAIN_CLASS_NAME" value="tech.danielwaiguru.moviesapp.viewmodels.UserViewModelTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
@@ -334,6 +490,63 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieDatabaseTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="tech.danielwaiguru.moviesapp.database.MovieDatabaseTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android Instrumented Tests.MovieDatabaseTest" />
+        <item itemvalue="Android JUnit.MovieViewModelTest" />
+        <item itemvalue="Android JUnit.UserViewModelTest" />
+        <item itemvalue="Android JUnit.MovieViewModelTest.moviesLiveData" />
+        <item itemvalue="Android JUnit.MovieViewModelTest.getMoviesFromDatabase" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -349,74 +562,134 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1592635867862">
+    <state x="280" y="15" key="#&lt;template&gt;_of_Android_JUnit" timestamp="1595796454184">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1592635867862" />
-    <state x="263" y="138" key="AndroidCreateResourceFileDialog" timestamp="1592636401300">
+    <state x="280" y="15" key="#&lt;template&gt;_of_Android_JUnit/0.0.1366.768@0.0.1366.768" timestamp="1595796454184" />
+    <state x="280" y="54" key="#ExampleUnitTest" timestamp="1595796634993">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="263" y="138" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1592636401300" />
-    <state x="542" y="214" key="AndroidCreateXmlResourceDialog" timestamp="1592654185353">
+    <state x="280" y="54" key="#ExampleUnitTest/0.0.1366.768@0.0.1366.768" timestamp="1595796634993" />
+    <state x="280" y="54" key="#MovieViewModelTest" timestamp="1595838094943">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="542" y="214" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1592654185353" />
-    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1592730324179">
+    <state x="280" y="51" key="#MovieViewModelTest.fetchMovies" timestamp="1595840324943">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1592730324179" />
-    <state width="1323" height="310" key="GridCell.Tab.0.bottom" timestamp="1595667044491">
+    <state x="280" y="51" key="#MovieViewModelTest.fetchMovies/0.0.1366.768@0.0.1366.768" timestamp="1595840324943" />
+    <state x="280" y="51" key="#MovieViewModelTest.getMoviesFromDatabase" timestamp="1595849759661">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="310" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595667044491" />
-    <state width="1323" height="310" key="GridCell.Tab.0.center" timestamp="1595667044490">
+    <state x="280" y="51" key="#MovieViewModelTest.getMoviesFromDatabase/0.0.1366.768@0.0.1366.768" timestamp="1595849759661" />
+    <state x="280" y="51" key="#MovieViewModelTest.moviesLiveData" timestamp="1595850375978">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="310" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595667044490" />
-    <state width="1323" height="310" key="GridCell.Tab.0.left" timestamp="1595667044486">
+    <state x="280" y="51" key="#MovieViewModelTest.moviesLiveData/0.0.1366.768@0.0.1366.768" timestamp="1595850375978" />
+    <state x="280" y="54" key="#MovieViewModelTest/0.0.1366.768@0.0.1366.768" timestamp="1595838094943" />
+    <state x="280" y="54" key="#UserViewModelTest" timestamp="1595796676093">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="310" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595667044486" />
-    <state width="1323" height="310" key="GridCell.Tab.0.right" timestamp="1595667044490">
+    <state x="280" y="54" key="#UserViewModelTest/0.0.1366.768@0.0.1366.768" timestamp="1595796676093" />
+    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1596008967678">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="310" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595667044490" />
-    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1592677538498">
+    <state x="474" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1596008967678" />
+    <state x="263" y="138" key="AndroidCreateResourceFileDialog" timestamp="1595971628303">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1592677538498" />
-    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1592677538498">
+    <state x="263" y="138" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1595971628303" />
+    <state x="542" y="214" key="AndroidCreateXmlResourceDialog" timestamp="1595940429859">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1592677538498" />
-    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1592677538497">
+    <state x="542" y="214" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1595940429859" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1596013926878">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1592677538497" />
-    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1592677538498">
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596013926878" />
+    <state width="1323" height="342" key="GridCell.Tab.0.bottom" timestamp="1596013611546">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1592677538498" />
+<<<<<<< Updated upstream
+    <state width="1323" height="342" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1596013611546" />
+    <state width="1323" height="342" key="GridCell.Tab.0.center" timestamp="1596013611545">
+||||||| constructed merge base
+    <state x="756" y="212" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1596979977270" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1596975297003">
+=======
+    <state x="756" y="212" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1596979977270" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1596982626878">
+>>>>>>> Stashed changes
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+<<<<<<< Updated upstream
+    <state width="1323" height="342" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1596013611545" />
+    <state width="1323" height="342" key="GridCell.Tab.0.left" timestamp="1596013611545">
+||||||| constructed merge base
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596975297003" />
+    <state width="429" height="656" key="Git.Branch.Popup" timestamp="1596906782034">
+=======
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596982626878" />
+    <state width="429" height="656" key="Git.Branch.Popup" timestamp="1596906782034">
+>>>>>>> Stashed changes
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="342" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1596013611545" />
+    <state width="1323" height="342" key="GridCell.Tab.0.right" timestamp="1596013611546">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="342" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1596013611546" />
+    <state width="1323" height="473" key="GridCell.Tab.1.bottom" timestamp="1595855164934">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="473" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595855164934" />
+    <state width="1323" height="473" key="GridCell.Tab.1.center" timestamp="1595855164934">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="473" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1595855164934" />
+    <state width="1323" height="473" key="GridCell.Tab.1.left" timestamp="1595855164934">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="473" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1595855164934" />
+    <state width="1323" height="473" key="GridCell.Tab.1.right" timestamp="1595855164934">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="473" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1595855164934" />
     <state x="388" y="99" key="MultipleFileMergeDialog" timestamp="1595666137724">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="388" y="99" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1595666137724" />
-    <state x="499" y="161" key="chooseDestDirectoryDialog" timestamp="1592647838568">
+    <state x="499" y="161" key="chooseDestDirectoryDialog" timestamp="1595791868906">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="499" y="161" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1592647838568" />
-    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1592716286982">
+    <state x="499" y="161" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1595791868906" />
+<<<<<<< Updated upstream
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1596008424168">
+||||||| constructed merge base
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1596975143775">
+=======
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1598275242103">
+>>>>>>> Stashed changes
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1592716286982" />
+<<<<<<< Updated upstream
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1596008424168" />
+||||||| constructed merge base
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1596975143775" />
+=======
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1598275242103" />
+>>>>>>> Stashed changes
     <state x="322" y="96" key="git4idea.branch.GitSmartOperationDialog" timestamp="1595666061082">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="322" y="96" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.768@0.0.1366.768" timestamp="1595666061082" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1592566132215">
+    <state x="424" y="86" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1595791868920">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1592566132215" />
+    <state x="424" y="86" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1595791868920" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1595763083087">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1595763083087" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1592566058823">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

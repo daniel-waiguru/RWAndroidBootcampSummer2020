@@ -10,13 +10,13 @@ import tech.danielwaiguru.moviesapp.models.User
 abstract class MovieDatabase : RoomDatabase(){
     abstract fun movieDao(): MovieDao
     abstract fun userDao(): UserDao
-    companion object{
+    /*companion object{
         @Volatile
         private var INSTANCE: MovieDatabase? = null
 
-        /**
+        *//**
          * Singleton database instance
-         */
+         *//*
         fun getDatabaseInstance(context: Context): MovieDatabase{
             synchronized(this){
                 var instance = INSTANCE
@@ -32,6 +32,6 @@ abstract class MovieDatabase : RoomDatabase(){
                 return instance
             }
         }
-    }
+    }*/
 
 }
