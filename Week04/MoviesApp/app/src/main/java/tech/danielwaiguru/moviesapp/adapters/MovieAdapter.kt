@@ -41,7 +41,7 @@ private var movieList = emptyList<Movie>()
         holder.movieTitle.text = movie.title
         holder.ratingBar.rating = movie.vote_average.toFloat()
         holder.itemView.setOnClickListener {
-            listener.onMovieItemClick(movie)
+            listener.onMovieItemClick(movie, it)
         }
     }
     internal fun setMovies(movies: List<Movie>){
@@ -50,7 +50,7 @@ private var movieList = emptyList<Movie>()
         notifyDataSetChanged()
     }
     interface MovieItemListener{
-        fun onMovieItemClick(movie: Movie)
+        fun onMovieItemClick(movie: Movie, itemView: View)
     }
 
     override fun getFilter(): Filter {
