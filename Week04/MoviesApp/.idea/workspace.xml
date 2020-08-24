@@ -10,12 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1425e714-26c1-4ba8-bda2-51128cf875d2" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/LazyLoadingListener.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/fragment_menu.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/searchable.xml" afterDir="false" />
+||||||| constructed merge base
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/details/DetailsActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_details.xml" afterDir="false" />
+=======
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/MovieApp.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/MovieAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/MovieAdapter.kt" afterDir="false" />
@@ -30,6 +39,31 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/menu-v26/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu-v26/main_menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+||||||| constructed merge base
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/MovieAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/adapters/MovieAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/details/DetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/details/DetailsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/tech/danielwaiguru/moviesapp/ui/movie/MovieFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/enter_from_left.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/anim/enter_from_left.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/exit_to_right.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/anim/exit_to_right.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/alexrider.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/court.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/crossings.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/cursed.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/dangergame.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/deskdawn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/goodbehavior.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/revenge.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/roswell.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/search.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/snow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/the.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/titan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/movie_item_view_holder.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/movie_item_view_holder.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+=======
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +117,15 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/tech/danielwaiguru/moviesapp/viewmodels" />
+<<<<<<< Updated upstream
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+||||||| constructed merge base
+    <property name="last_opened_file_path" value="D:/android/iSellTransition/iSellTransition/iSellTransition-Final" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+>>>>>>> Stashed changes
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -98,7 +140,7 @@
       <recent name="C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\res\drawable-v24" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.app">
+  <component name="RunManager" selected="Android Instrumented Tests.MovieDatabaseTest">
     <configuration name="MovieViewModelTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <shortenClasspath name="MANIFEST" />
@@ -292,9 +334,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Android Instrumented Tests.MovieDatabaseTest" />
         <item itemvalue="Android JUnit.MovieViewModelTest" />
         <item itemvalue="Android JUnit.UserViewModelTest" />
-        <item itemvalue="Android Instrumented Tests.MovieDatabaseTest" />
         <item itemvalue="Android JUnit.MovieViewModelTest.moviesLiveData" />
         <item itemvalue="Android JUnit.MovieViewModelTest.getMoviesFromDatabase" />
       </list>
@@ -361,12 +403,28 @@
     <state width="1323" height="342" key="GridCell.Tab.0.bottom" timestamp="1596013611546">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
+<<<<<<< Updated upstream
     <state width="1323" height="342" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1596013611546" />
     <state width="1323" height="342" key="GridCell.Tab.0.center" timestamp="1596013611545">
+||||||| constructed merge base
+    <state x="756" y="212" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1596979977270" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1596975297003">
+=======
+    <state x="756" y="212" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1596979977270" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1596982626878">
+>>>>>>> Stashed changes
       <screen x="0" y="0" width="1366" height="768" />
     </state>
+<<<<<<< Updated upstream
     <state width="1323" height="342" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1596013611545" />
     <state width="1323" height="342" key="GridCell.Tab.0.left" timestamp="1596013611545">
+||||||| constructed merge base
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596975297003" />
+    <state width="429" height="656" key="Git.Branch.Popup" timestamp="1596906782034">
+=======
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596982626878" />
+    <state width="429" height="656" key="Git.Branch.Popup" timestamp="1596906782034">
+>>>>>>> Stashed changes
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="342" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1596013611545" />
@@ -398,10 +456,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="499" y="161" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1595791868906" />
+<<<<<<< Updated upstream
     <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1596008424168">
+||||||| constructed merge base
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1596975143775">
+=======
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1598275242103">
+>>>>>>> Stashed changes
       <screen x="0" y="0" width="1366" height="768" />
     </state>
+<<<<<<< Updated upstream
     <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1596008424168" />
+||||||| constructed merge base
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1596975143775" />
+=======
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1598275242103" />
+>>>>>>> Stashed changes
     <state x="322" y="96" key="git4idea.branch.GitSmartOperationDialog" timestamp="1595666061082">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
