@@ -1,5 +1,8 @@
 package tech.danielwaiguru.estudy.models
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import tech.danielwaiguru.estudy.networking.IMAGES_URL
 import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -17,7 +20,10 @@ data class Monster(
     val description: String,
     val price: Double,
     val scariness: Int
+
+){
 ):Parcelable{
+
     val thumbNail
     get() = "$IMAGES_URL/${imageFile}_tn.webp"
 }
