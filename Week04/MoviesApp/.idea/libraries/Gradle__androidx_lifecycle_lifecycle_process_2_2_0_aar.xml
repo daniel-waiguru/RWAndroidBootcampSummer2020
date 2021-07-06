@@ -1,24 +1,11 @@
-<<<<<<< HEAD
 <component name="libraryTable">
   <library name="Gradle: androidx.lifecycle:lifecycle-process:2.2.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21181b20135799ce5b0e8d627b778fae/jetified-lifecycle-process-2.2.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21181b20135799ce5b0e8d627b778fae/jetified-lifecycle-process-2.2.0/res" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-process/2.2.0/87ad54b3a3ab3e83595fd66749e92beaf8123dd9/lifecycle-process-2.2.0-sources.jar!/" />
-    </SOURCES>
-  </library>
-</component>
-||||||| 1fbe611
-=======
-<component name="libraryTable">
-  <library name="Gradle: androidx.lifecycle:lifecycle-process:2.2.0@aar">
-    <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e4dbc5ddae0820526b201c8921c6d08b/jetified-lifecycle-process-2.2.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e4dbc5ddae0820526b201c8921c6d08b/jetified-lifecycle-process-2.2.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e4dbc5ddae0820526b201c8921c6d08b/jetified-lifecycle-process-2.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/085e5b0e94d0031acc15dd4eae3e2dfe/jetified-lifecycle-process-2.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/15c1806fe7f8890348ed258f0d0efd0d/jetified-lifecycle-process-2.2.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/15c1806fe7f8890348ed258f0d0efd0d/jetified-lifecycle-process-2.2.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/15c1806fe7f8890348ed258f0d0efd0d/jetified-lifecycle-process-2.2.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -26,4 +13,3 @@
     </SOURCES>
   </library>
 </component>
->>>>>>> week8-Background-Processing

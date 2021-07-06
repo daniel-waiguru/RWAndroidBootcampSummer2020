@@ -1,6 +1,7 @@
 package tech.danielwaiguru.moviesapp.ui.login
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +9,10 @@ import android.widget.CheckBox
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import kotlinx.android.synthetic.main.fragment_login.*
+import kotlinx.android.synthetic.main.fragment_login.etPassword
+import kotlinx.android.synthetic.main.fragment_register.*
 import org.koin.android.ext.android.getKoin
 import org.koin.android.viewmodel.ext.android.viewModel
 import org.koin.core.qualifier.named
@@ -17,7 +21,9 @@ import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.repositories.UserPrefRepository
 import tech.danielwaiguru.moviesapp.ui.movie.MovieFragment
 import tech.danielwaiguru.moviesapp.ui.register.RegisterFragment
+import tech.danielwaiguru.moviesapp.utils.Status
 import tech.danielwaiguru.moviesapp.viewmodels.UserViewModel
+import kotlin.math.log
 
 
 class LoginFragment : Fragment() {
@@ -38,25 +44,52 @@ class LoginFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        subscribers()
         /**
          * login button on click listener
          */
         btn_login.setOnClickListener {
             if (userValidation()){
                 saveUser()
-                requireActivity().supportFragmentManager.beginTransaction()
-                    .replace(
-                        R.id.nav_host_fragment,
-                        MovieFragment()
-                    )
-                    .commit()
+                userLogin()
                 scope.close()
             }
         }
         txt_register.setOnClickListener {
             initUi()
         }
+    }
+    private fun subscribers() {
+        userViewModel.userStatus.observe(viewLifecycleOwner, Observer {
+            when (it.status) {
+                Status.LOADING -> {
+                    login.visibility = View.VISIBLE
+                }
+                Status.ERROR -> {
+                    login.visibility = View.GONE
+                    Toast.makeText(context, getString(R.string.login_error), Toast.LENGTH_SHORT).show()
+                }
+                Status.SUCCESS -> {
+                    login.visibility = View.GONE
+                    Log.i("User", "User is ${it.data}")
+                    if (it.data != null) {
+                        requireActivity().supportFragmentManager.beginTransaction()
+                            .replace(
+                                R.id.nav_host_fragment,
+                                MovieFragment()
+                            )
+                            .commit()
+                    } else {
+                        return@Observer
+                    }
+
+                }
+            }
+
+        })
+    }
+    private fun userLogin() {
+        userViewModel.loginUser(etUser.text.toString(), etPassword.text.toString())
     }
     /**
      * Validating user inputs

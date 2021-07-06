@@ -9,7 +9,8 @@ import tech.danielwaiguru.moviesapp.models.User
 @Dao
 interface UserDao {
     @Insert(onConflict = OnConflictStrategy.ABORT)
-    suspend fun registerUser(user: User)
-    @Query("SELECT * FROM users WHERE username LIKE :username")
-    fun loginUser( username: String): User
+    suspend fun registerUser(user: User): Long
+
+    @Query("SELECT * FROM users WHERE username LIKE :username AND password LIKE :password")
+    suspend fun loginUser( username: String, password: String): User?
 }

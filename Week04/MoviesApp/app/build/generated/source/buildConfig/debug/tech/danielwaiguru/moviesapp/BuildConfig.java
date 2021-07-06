@@ -9,4 +9,6 @@ public final class BuildConfig {
   public static final String BUILD_TYPE = "debug";
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0";
+  // Fields from build type: debug
+  public static final String key = "7d533c39f66d4a212a1b3c81273ec7d1";
 }

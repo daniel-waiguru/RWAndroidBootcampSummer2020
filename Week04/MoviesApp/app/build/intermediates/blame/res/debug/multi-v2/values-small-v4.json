@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DanielWaiguru\\.gradle\\caches\\transforms-2\\files-2.1\\245eeba801ffe20aa3d6dcc813cd56aa\\material-1.1.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\DanielWaiguru\\.gradle\\caches\\transforms-2\\files-2.1\\5f16ce7271a7a6612f3b624f58931475\\material-1.4.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

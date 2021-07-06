@@ -159,6 +159,16 @@
                 app:layout_constraintTop_toBottomOf="@id/btn_register"
                 android:layout_marginTop="@dimen/marginTop"
                 />
+            <ProgressBar
+                android:id="@+id/registerLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="gone"
+                />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

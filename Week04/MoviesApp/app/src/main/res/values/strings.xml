@@ -57,4 +57,5 @@
     <string name="transition_image">tPoster</string>
     <string name="transition_movie_title">tName</string>
     <string name="movie_extra">movie</string>
+    <string name="login_error">Invalid Username/Password</string>
 </resources>

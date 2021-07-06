@@ -1,7 +1,10 @@
-#Sun Jun 21 11:34:53 EAT 2020
-base.0=C\:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+#Tue Jul 06 15:13:11 EAT 2021
+base.2=D\:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+path.2=classes2.dex
+base.1=D\:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
 path.1=classes.dex
+base.0=D\:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+renamed.2=classes3.dex
 renamed.1=classes2.dex
-path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+path.0=classes.dex

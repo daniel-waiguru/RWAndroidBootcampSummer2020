@@ -7,12 +7,16 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import kotlinx.android.synthetic.main.fragment_register.*
 import org.koin.android.viewmodel.ext.android.viewModel
 import tech.danielwaiguru.moviesapp.R
 import tech.danielwaiguru.moviesapp.models.User
 import tech.danielwaiguru.moviesapp.ui.login.LoginFragment
+import tech.danielwaiguru.moviesapp.utils.Resource
+import tech.danielwaiguru.moviesapp.utils.Status
 import tech.danielwaiguru.moviesapp.viewmodels.UserViewModel
+
 
 class RegisterFragment : Fragment() {
     private val userViewModel by viewModel<UserViewModel>()
@@ -31,14 +35,31 @@ class RegisterFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        subscribers()
         text_login.setOnClickListener {
             initUi()
         }
         btn_register.setOnClickListener {
-            initLoginUi()
+            registerUser()
         }
     }
+    private fun subscribers() {
+        userViewModel.registerStatus.observe(viewLifecycleOwner, Observer {
+            when (it.status) {
+                Status.LOADING -> {
+                    registerLoading.visibility = View.VISIBLE
+                }
+                Status.ERROR -> {
+                    registerLoading.visibility = View.GONE
+                }
+                Status.SUCCESS -> {
+                    registerLoading.visibility = View.GONE
+                    initLoginUi()
+                }
+            }
 
+        })
+    }
     private fun userDetailsValidation(): Boolean {
        return usernameValidation() && passwordValidation()
     }
@@ -88,7 +109,7 @@ class RegisterFragment : Fragment() {
         }
     }
     private fun initLoginUi(){
-        registerUser()
+        //registerUser()
         Toast.makeText(activity, "Registered successfully", Toast.LENGTH_SHORT).show()
         val loginFragment = LoginFragment()
         requireActivity().supportFragmentManager.beginTransaction()

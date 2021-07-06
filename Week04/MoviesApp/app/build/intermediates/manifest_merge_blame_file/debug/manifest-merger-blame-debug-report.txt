@@ -6,54 +6,301 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
-8-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml
+8-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml
+9-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:5:5-19:19
-12        android:allowBackup="true"
-12-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.3.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\2f305c0ed3056ca895a216f9db1fc5d1\core-1.3.0\AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:extractNativeLibs="false"
-16        android:icon="@mipmap/ic_launcher"
-16-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:7:9-43
-17        android:label="@string/app_name"
-17-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:8:9-41
-18        android:roundIcon="@mipmap/ic_launcher_round"
-18-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:9:9-54
-19        android:supportsRtl="true"
-19-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:10:9-35
-20        android:testOnly="true"
-21        android:theme="@style/AppTheme" >
-21-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:11:9-40
-22        <activity android:name="tech.danielwaiguru.moviesapp.MainActivity" >
-22-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:12:9-18:20
-22-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:12:19-47
-23            <intent-filter>
-23-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:13:13-17:29
-24                <action android:name="android.intent.action.MAIN" />
-24-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:14:17-69
-24-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:14:25-66
-25
-26                <category android:name="android.intent.category.LAUNCHER" />
-26-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:16:17-77
-26-->C:\Users\DanielWaiguru\IdeaProjects\AndroidBootcamp\Week04\MoviesApp\app\src\main\AndroidManifest.xml:16:27-74
-27            </intent-filter>
-28        </activity>
-29
-30        <provider
-30-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\21181b20135799ce5b0e8d627b778fae\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-31            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-31-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\21181b20135799ce5b0e8d627b778fae\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-32            android:authorities="tech.danielwaiguru.moviesapp.lifecycle-process"
-32-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\21181b20135799ce5b0e8d627b778fae\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-33            android:exported="false"
-33-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\21181b20135799ce5b0e8d627b778fae\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-34            android:multiprocess="true" />
-34-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\21181b20135799ce5b0e8d627b778fae\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-35    </application>
-36
-37</manifest>
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:5:5-79
+11-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:6:5-67
+12-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:25:5-68
+13-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:25:22-65
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+14-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:27:5-81
+14-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:27:22-78
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+15-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:28:5-77
+15-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:28:22-74
+16
+17    <application
+17-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:8:5-31:19
+18        android:name="tech.danielwaiguru.moviesapp.MovieApp"
+18-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:9:9-33
+19        android:allowBackup="true"
+19-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:10:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.6.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\07f098fda06c161090714a20d4115e15\core-1.6.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:icon="@mipmap/ic_launcher"
+23-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:11:9-43
+24        android:label="@string/app_name"
+24-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:12:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:13:9-54
+26        android:supportsRtl="true"
+26-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:14:9-35
+27        android:testOnly="true"
+28        android:theme="@style/AppTheme" >
+28-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:15:9-40
+29        <activity
+29-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:16:9-17:71
+30            android:name="tech.danielwaiguru.moviesapp.ui.details.DetailsActivity"
+30-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:16:19-61
+31            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+31-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:17:13-69
+32        <activity
+32-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:18:9-20:63
+33            android:name="tech.danielwaiguru.moviesapp.ui.settings.SettingsActivity"
+33-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:19:13-57
+34            android:label="@string/title_activity_settings" />
+34-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:20:13-60
+35        <activity android:name="tech.danielwaiguru.moviesapp.ui.main.MainActivity" >
+35-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:21:9-30:20
+35-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:22:13-49
+36            <intent-filter>
+36-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:24:13-29:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:25:17-69
+37-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:25:25-66
+38                <action android:name="android.intent.action.SEARCH" />
+38-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:26:17-71
+38-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:26:25-68
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:28:17-77
+40-->D:\AndroidStudioProjects\RWAndroidBootcampSummer2020\Week04\MoviesApp\app\src\main\AndroidManifest.xml:28:27-74
+41            </intent-filter>
+42        </activity>
+43
+44        <provider
+44-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:31:9-39:20
+45            android:name="androidx.startup.InitializationProvider"
+45-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:32:13-67
+46            android:authorities="tech.danielwaiguru.moviesapp.androidx-startup"
+46-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:33:13-68
+47            android:exported="false" >
+47-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:34:13-37
+48            <meta-data
+48-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:36:13-38:52
+49                android:name="androidx.work.WorkManagerInitializer"
+49-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:37:17-68
+50                android:value="androidx.startup" />
+50-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:38:17-49
+51        </provider>
+52
+53        <service
+53-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:41:9-46:35
+54            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+54-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:42:13-88
+55            android:directBootAware="false"
+55-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:43:13-44
+56            android:enabled="@bool/enable_system_alarm_service_default"
+56-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:44:13-72
+57            android:exported="false" />
+57-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:45:13-37
+58        <service
+58-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:47:9-53:35
+59            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+59-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:48:13-84
+60            android:directBootAware="false"
+60-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:49:13-44
+61            android:enabled="@bool/enable_system_job_service_default"
+61-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:50:13-70
+62            android:exported="true"
+62-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:51:13-36
+63            android:permission="android.permission.BIND_JOB_SERVICE" />
+63-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:52:13-69
+64        <service
+64-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:54:9-59:35
+65            android:name="androidx.work.impl.foreground.SystemForegroundService"
+65-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:55:13-81
+66            android:directBootAware="false"
+66-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:56:13-44
+67            android:enabled="@bool/enable_system_foreground_service_default"
+67-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:57:13-77
+68            android:exported="false" />
+68-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:58:13-37
+69
+70        <receiver
+70-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:61:9-66:35
+71            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+71-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:62:13-88
+72            android:directBootAware="false"
+72-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:63:13-44
+73            android:enabled="true"
+73-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:64:13-35
+74            android:exported="false" />
+74-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:65:13-37
+75        <receiver
+75-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:67:9-77:20
+76            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+76-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:68:13-106
+77            android:directBootAware="false"
+77-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:69:13-44
+78            android:enabled="false"
+78-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:70:13-36
+79            android:exported="false" >
+79-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:71:13-37
+80            <intent-filter>
+80-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:73:13-76:29
+81                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+81-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:74:17-87
+81-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:74:25-84
+82                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+82-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:75:17-90
+82-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:75:25-87
+83            </intent-filter>
+84        </receiver>
+85        <receiver
+85-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:78:9-88:20
+86            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+86-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:79:13-104
+87            android:directBootAware="false"
+87-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:80:13-44
+88            android:enabled="false"
+88-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:81:13-36
+89            android:exported="false" >
+89-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:82:13-37
+90            <intent-filter>
+90-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:84:13-87:29
+91                <action android:name="android.intent.action.BATTERY_OKAY" />
+91-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:85:17-77
+91-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:85:25-74
+92                <action android:name="android.intent.action.BATTERY_LOW" />
+92-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:86:17-76
+92-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:86:25-73
+93            </intent-filter>
+94        </receiver>
+95        <receiver
+95-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:89:9-99:20
+96            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+96-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:90:13-104
+97            android:directBootAware="false"
+97-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:91:13-44
+98            android:enabled="false"
+98-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:92:13-36
+99            android:exported="false" >
+99-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:93:13-37
+100            <intent-filter>
+100-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:95:13-98:29
+101                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+101-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:96:17-83
+101-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:96:25-80
+102                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+102-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:97:17-82
+102-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:97:25-79
+103            </intent-filter>
+104        </receiver>
+105        <receiver
+105-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:100:9-109:20
+106            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+106-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:101:13-103
+107            android:directBootAware="false"
+107-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:102:13-44
+108            android:enabled="false"
+108-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:103:13-36
+109            android:exported="false" >
+109-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:104:13-37
+110            <intent-filter>
+110-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:106:13-108:29
+111                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+111-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:107:17-79
+111-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:107:25-76
+112            </intent-filter>
+113        </receiver>
+114        <receiver
+114-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:110:9-121:20
+115            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+115-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:111:13-88
+116            android:directBootAware="false"
+116-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:112:13-44
+117            android:enabled="false"
+117-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:113:13-36
+118            android:exported="false" >
+118-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:114:13-37
+119            <intent-filter>
+119-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:116:13-120:29
+120                <action android:name="android.intent.action.BOOT_COMPLETED" />
+120-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:117:17-79
+120-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:117:25-76
+121                <action android:name="android.intent.action.TIME_SET" />
+121-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:118:17-73
+121-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:118:25-70
+122                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+122-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:119:17-81
+122-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:119:25-78
+123            </intent-filter>
+124        </receiver>
+125        <receiver
+125-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:122:9-131:20
+126            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+126-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:123:13-99
+127            android:directBootAware="false"
+127-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:124:13-44
+128            android:enabled="@bool/enable_system_alarm_service_default"
+128-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:125:13-72
+129            android:exported="false" >
+129-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:126:13-37
+130            <intent-filter>
+130-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:128:13-130:29
+131                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+131-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:129:17-98
+131-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:129:25-95
+132            </intent-filter>
+133        </receiver>
+134        <receiver
+134-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:132:9-142:20
+135            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+135-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:133:13-78
+136            android:directBootAware="false"
+136-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:134:13-44
+137            android:enabled="true"
+137-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:135:13-35
+138            android:exported="true"
+138-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:136:13-36
+139            android:permission="android.permission.DUMP" >
+139-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:137:13-57
+140            <intent-filter>
+140-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:139:13-141:29
+141                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+141-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:140:17-88
+141-->[androidx.work:work-runtime:2.6.0-beta01] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\583fee7677655b639342d3832cd3056a\work-runtime-2.6.0-beta01\AndroidManifest.xml:140:25-85
+142            </intent-filter>
+143        </receiver>
+144
+145        <provider
+145-->[com.squareup.picasso:picasso:2.71828] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\7429a4e9bb77ac4bc242254342a9c435\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+146            android:name="com.squareup.picasso.PicassoProvider"
+146-->[com.squareup.picasso:picasso:2.71828] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\7429a4e9bb77ac4bc242254342a9c435\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+147            android:authorities="tech.danielwaiguru.moviesapp.com.squareup.picasso"
+147-->[com.squareup.picasso:picasso:2.71828] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\7429a4e9bb77ac4bc242254342a9c435\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+148            android:exported="false" />
+148-->[com.squareup.picasso:picasso:2.71828] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\7429a4e9bb77ac4bc242254342a9c435\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+149
+150        <service
+150-->[androidx.room:room-runtime:2.3.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\1122c554449b13fe215ce1f8291ab841\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+151            android:name="androidx.room.MultiInstanceInvalidationService"
+151-->[androidx.room:room-runtime:2.3.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\1122c554449b13fe215ce1f8291ab841\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+152            android:directBootAware="true"
+152-->[androidx.room:room-runtime:2.3.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\1122c554449b13fe215ce1f8291ab841\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+153            android:exported="false" />
+153-->[androidx.room:room-runtime:2.3.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\1122c554449b13fe215ce1f8291ab841\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+154
+155        <provider
+155-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\15c1806fe7f8890348ed258f0d0efd0d\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+156            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+156-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\15c1806fe7f8890348ed258f0d0efd0d\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+157            android:authorities="tech.danielwaiguru.moviesapp.lifecycle-process"
+157-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\15c1806fe7f8890348ed258f0d0efd0d\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+158            android:exported="false"
+158-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\15c1806fe7f8890348ed258f0d0efd0d\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+159            android:multiprocess="true" />
+159-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\DanielWaiguru\.gradle\caches\transforms-2\files-2.1\15c1806fe7f8890348ed258f0d0efd0d\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+160    </application>
+161
+162</manifest>

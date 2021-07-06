@@ -1,1 +1,1 @@
-[{"navFile":"src\\main\\res\\navigation\\nav_graph.xml","javaFiles":["tech.danielwaiguru.moviesapp.MovieFragmentDirections","tech.danielwaiguru.moviesapp.DetailsFragmentArgs"]}]
+[{"navFile":"src\\main\\res\\navigation\\nav_graph.xml","javaFiles":["tech.danielwaiguru.moviesapp.ui.movie.MovieFragmentDirections","tech.danielwaiguru.moviesapp.ui.details.DetailsFragmentArgs","tech.danielwaiguru.moviesapp.ui.login.LoginFragmentDirections","tech.danielwaiguru.moviesapp.ui.register.RegisterFragmentDirections"]}]

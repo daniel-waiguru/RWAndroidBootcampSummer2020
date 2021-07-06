@@ -1,150 +1,166 @@
 [
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_search.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_revenge.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\revenge.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_movie.xml.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\layout\\fragment_movie.xml"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_firstman.jpg.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\firstman.jpg"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_corner.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\round_corner.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_back.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_back.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_dangergame.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\dangergame.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_details.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\layout\\fragment_details.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_deskdawn.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\deskdawn.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wave_signup.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_wave_signup.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\layout\\fragment_register.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\search.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_crossings.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\crossings.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search.xml.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_search.xml"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_movie_item_view_holder.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\layout\\movie_item_view_holder.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_user.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_user.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_person_pin.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_person_pin.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_firstman.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\firstman.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_movie_item_view_holder.xml.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\layout\\movie_item_view_holder.xml"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_cursed.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\cursed.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_exit_to_right.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\anim\\exit_to_right.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_roswell.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\roswell.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_back.xml.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_back.xml"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_the.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\the.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_circle_play.xml.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_circle_play.xml"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_movie.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\layout\\fragment_movie.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\menu-v26_main_menu.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\menu-v26\\main_menu.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_alexrider.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\alexrider.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_circle_play.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_circle_play.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_snow.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\snow.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_fragment_menu.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\menu\\fragment_menu.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wave.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_wave.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_details.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\layout\\activity_details.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_email.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_titan.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\titan.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_details.xml.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\layout\\fragment_details.xml"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\xml_searchable.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\xml\\searchable.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_settings_activity.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\layout\\settings_activity.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_main_menu.xml.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\menu\\main_menu.xml"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\layout\\fragment_login.xml"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_goodbehavior.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\goodbehavior.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_court.jpg.flat",
-        "source": "C:\\Users\\DanielWaiguru\\IdeaProjects\\AndroidBootcamp\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\court.jpg"
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\navigation_nav_graph.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_main_menu.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_enter_from_left.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\anim\\enter_from_left.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\xml_root_preferences.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\xml\\root_preferences.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_lock.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\RWAndroidBootcampSummer2020\\Week04\\MoviesApp\\app\\src\\main\\res\\drawable\\ic_lock.xml"
     }
 ]
